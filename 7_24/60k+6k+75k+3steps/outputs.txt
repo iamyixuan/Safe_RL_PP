@@ -1,0 +1,4520 @@
+Microsoft Windows [Version 10.0.19045.3208]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Academic Folder\safe-control\safe-control-gym\safe_control_gym\experiments\constrained_ppo_cartpole>py experiment_1.py ^
+More?     --algo constrained_ppo ^
+More?     --task cartpole ^
+More?     --overrides ^
+More?         ./config_overrides/cartpole_track.yaml ^
+More?         ./config_overrides/constrained_ppo_cartpole.yaml ^
+More?     --kv_overrides ^
+More?         algo_config.training=True
+pybullet build time: Jun 18 2023 14:16:20
+D:\python\lib\site-packages\gymnasium\spaces\box.py:130: UserWarning: ←[33mWARN: Box bound precision lowered by casting to float32←[0m
+  gym.logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+CasADi - 2023-07-24 11:18:07 WARNING("The options 't0', 'tf', 'grid' and 'output_t0' have been deprecated.
+The same functionality is provided by providing additional input arguments to the 'integrator' function, in particular:
+ * Call integrator(..., t0, tf, options) for a single output time, or
+ * Call integrator(..., t0, grid, options) for multiple grid points.
+The legacy 'output_t0' option can be emulated by including or excluding 't0' in 'grid'.
+Backwards compatibility is provided in this release only.") [.../casadi/core/integrator.cpp:515]
+D:\python\lib\site-packages\torch\nn\functional.py:1956: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+2023-07-24 11:18:11,522 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:11,727 : Eval | ep_lengths 19.90 +/- 7.93 | ep_return 15.220 +/- 7.754
+2023-07-24 11:18:11,741 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00701  |
+|    entropy_loss         | -0.857   |
+|    policy_loss          | -0.0148  |
+|    value_loss           | 0.884    |
+| stat/                   |          |
+|    constraint_violation | 2.2e+03  |
+|    ep_constraint_vio... | 11.6     |
+|    ep_length            | 14.2     |
+|    ep_return            | 7.75     |
+|    ep_reward            | 0.536    |
+| stat_eval/              |          |
+|    constraint_violation | 11.9     |
+|    ep_length            | 19.9     |
+|    ep_return            | 15.2     |
+|    ep_reward            | 0.728    |
+|    mse                  | 122      |
+| time/                   |          |
+|    progress             | 0.05     |
+|    step                 | 3e+03    |
+|    step_time            | 0.85     |
+--------------------------------------
+
+2023-07-24 11:18:15,804 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:15,987 : Eval | ep_lengths 18.00 +/- 4.90 | ep_return 11.175 +/- 5.682
+2023-07-24 11:18:15,990 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00473  |
+|    entropy_loss         | -0.786   |
+|    policy_loss          | -0.00569 |
+|    value_loss           | 0.794    |
+| stat/                   |          |
+|    constraint_violation | 4.34e+03 |
+|    ep_constraint_vio... | 11.5     |
+|    ep_length            | 15.5     |
+|    ep_return            | 9.03     |
+|    ep_reward            | 0.571    |
+| stat_eval/              |          |
+|    constraint_violation | 11.1     |
+|    ep_length            | 18       |
+|    ep_return            | 11.2     |
+|    ep_reward            | 0.598    |
+|    mse                  | 121      |
+| time/                   |          |
+|    progress             | 0.1      |
+|    step                 | 6e+03    |
+|    step_time            | 0.79     |
+--------------------------------------
+
+2023-07-24 11:18:20,047 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:20,269 : Eval | ep_lengths 22.00 +/- 4.84 | ep_return 11.995 +/- 7.006
+2023-07-24 11:18:20,272 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00426  |
+|    entropy_loss         | -0.707   |
+|    policy_loss          | -0.00416 |
+|    value_loss           | 1.01     |
+| stat/                   |          |
+|    constraint_violation | 6.5e+03  |
+|    ep_constraint_vio... | 14.5     |
+|    ep_length            | 23       |
+|    ep_return            | 11       |
+|    ep_reward            | 0.462    |
+| stat_eval/              |          |
+|    constraint_violation | 12.4     |
+|    ep_length            | 22       |
+|    ep_return            | 12       |
+|    ep_reward            | 0.507    |
+|    mse                  | 126      |
+| time/                   |          |
+|    progress             | 0.15     |
+|    step                 | 9e+03    |
+|    step_time            | 0.791    |
+--------------------------------------
+
+2023-07-24 11:18:24,029 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:24,300 : Eval | ep_lengths 31.80 +/- 15.12 | ep_return 18.696 +/- 13.146
+2023-07-24 11:18:24,306 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00756  |
+|    entropy_loss         | -0.652   |
+|    policy_loss          | -0.0088  |
+|    value_loss           | 2.3      |
+| stat/                   |          |
+|    constraint_violation | 8.5e+03  |
+|    ep_constraint_vio... | 15.9     |
+|    ep_length            | 23.8     |
+|    ep_return            | 9.96     |
+|    ep_reward            | 0.418    |
+| stat_eval/              |          |
+|    constraint_violation | 15       |
+|    ep_length            | 31.8     |
+|    ep_return            | 18.7     |
+|    ep_reward            | 0.553    |
+|    mse                  | 155      |
+| time/                   |          |
+|    progress             | 0.2      |
+|    step                 | 1.2e+04  |
+|    step_time            | 0.713    |
+--------------------------------------
+
+2023-07-24 11:18:27,893 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:28,272 : Eval | ep_lengths 47.10 +/- 9.91 | ep_return 23.229 +/- 11.585
+2023-07-24 11:18:28,279 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0144   |
+|    entropy_loss         | -0.625   |
+|    policy_loss          | -0.0106  |
+|    value_loss           | 2.83     |
+| stat/                   |          |
+|    constraint_violation | 1.04e+04 |
+|    ep_constraint_vio... | 18.6     |
+|    ep_length            | 30.1     |
+|    ep_return            | 11.8     |
+|    ep_reward            | 0.39     |
+| stat_eval/              |          |
+|    constraint_violation | 17.7     |
+|    ep_length            | 47.1     |
+|    ep_return            | 23.2     |
+|    ep_reward            | 0.459    |
+|    mse                  | 143      |
+| time/                   |          |
+|    progress             | 0.25     |
+|    step                 | 1.5e+04  |
+|    step_time            | 0.748    |
+--------------------------------------
+
+2023-07-24 11:18:31,622 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:32,113 : Eval | ep_lengths 65.00 +/- 2.76 | ep_return 49.069 +/- 5.225
+2023-07-24 11:18:32,119 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0153   |
+|    entropy_loss         | -0.582   |
+|    policy_loss          | -0.0172  |
+|    value_loss           | 3.93     |
+| stat/                   |          |
+|    constraint_violation | 1.22e+04 |
+|    ep_constraint_vio... | 29.6     |
+|    ep_length            | 51.4     |
+|    ep_return            | 25.5     |
+|    ep_reward            | 0.496    |
+| stat_eval/              |          |
+|    constraint_violation | 29       |
+|    ep_length            | 65       |
+|    ep_return            | 49.1     |
+|    ep_reward            | 0.756    |
+|    mse                  | 191      |
+| time/                   |          |
+|    progress             | 0.3      |
+|    step                 | 1.8e+04  |
+|    step_time            | 0.637    |
+--------------------------------------
+
+2023-07-24 11:18:35,692 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:36,808 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.519 +/- 2.842
+2023-07-24 11:18:36,815 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.011    |
+|    entropy_loss         | -0.552   |
+|    policy_loss          | -0.0116  |
+|    value_loss           | 56.8     |
+| stat/                   |          |
+|    constraint_violation | 1.4e+04  |
+|    ep_constraint_vio... | 46.1     |
+|    ep_length            | 81.9     |
+|    ep_return            | 43.5     |
+|    ep_reward            | 0.486    |
+| stat_eval/              |          |
+|    constraint_violation | 0.4      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.843    |
+|    mse                  | 90.7     |
+| time/                   |          |
+|    progress             | 0.35     |
+|    step                 | 2.1e+04  |
+|    step_time            | 0.674    |
+--------------------------------------
+
+2023-07-24 11:18:40,094 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:41,151 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 121.401 +/- 6.321
+2023-07-24 11:18:41,154 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.012    |
+|    entropy_loss         | -0.525   |
+|    policy_loss          | -0.00731 |
+|    value_loss           | 4.4      |
+| stat/                   |          |
+|    constraint_violation | 1.49e+04 |
+|    ep_constraint_vio... | 37.1     |
+|    ep_length            | 150      |
+|    ep_return            | 82.8     |
+|    ep_reward            | 0.552    |
+| stat_eval/              |          |
+|    constraint_violation | 0        |
+|    ep_length            | 150      |
+|    ep_return            | 121      |
+|    ep_reward            | 0.809    |
+|    mse                  | 73.2     |
+| time/                   |          |
+|    progress             | 0.4      |
+|    step                 | 2.4e+04  |
+|    step_time            | 0.653    |
+--------------------------------------
+
+2023-07-24 11:18:44,331 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:45,391 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.667 +/- 7.970
+2023-07-24 11:18:45,397 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0251   |
+|    entropy_loss         | -0.449   |
+|    policy_loss          | -0.0132  |
+|    value_loss           | 1.95     |
+| stat/                   |          |
+|    constraint_violation | 1.56e+04 |
+|    ep_constraint_vio... | 36.1     |
+|    ep_length            | 150      |
+|    ep_return            | 98.7     |
+|    ep_reward            | 0.658    |
+| stat_eval/              |          |
+|    constraint_violation | 1.3      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.878    |
+|    mse                  | 107      |
+| time/                   |          |
+|    progress             | 0.45     |
+|    step                 | 2.7e+04  |
+|    step_time            | 0.629    |
+--------------------------------------
+
+2023-07-24 11:18:48,559 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:49,638 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.318 +/- 11.093
+2023-07-24 11:18:49,641 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0423   |
+|    entropy_loss         | -0.389   |
+|    policy_loss          | -0.00137 |
+|    value_loss           | 1.76     |
+| stat/                   |          |
+|    constraint_violation | 1.63e+04 |
+|    ep_constraint_vio... | 39.7     |
+|    ep_length            | 150      |
+|    ep_return            | 106      |
+|    ep_reward            | 0.708    |
+| stat_eval/              |          |
+|    constraint_violation | 2.4      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.855    |
+|    mse                  | 182      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+04    |
+|    step_time            | 0.641    |
+--------------------------------------
+
+2023-07-24 11:18:52,887 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:53,966 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 133.855 +/- 1.707
+2023-07-24 11:18:53,972 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0052   |
+|    entropy_loss         | -0.34    |
+|    policy_loss          | 0.000235 |
+|    value_loss           | 3.52     |
+| stat/                   |          |
+|    constraint_violation | 1.69e+04 |
+|    ep_constraint_vio... | 25.9     |
+|    ep_length            | 150      |
+|    ep_return            | 111      |
+|    ep_reward            | 0.739    |
+| stat_eval/              |          |
+|    constraint_violation | 0.6      |
+|    ep_length            | 150      |
+|    ep_return            | 134      |
+|    ep_reward            | 0.892    |
+|    mse                  | 142      |
+| time/                   |          |
+|    progress             | 0.55     |
+|    step                 | 3.3e+04  |
+|    step_time            | 0.684    |
+--------------------------------------
+
+2023-07-24 11:18:57,371 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:18:58,512 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 133.695 +/- 10.521
+2023-07-24 11:18:58,515 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0156   |
+|    entropy_loss         | -0.304   |
+|    policy_loss          | -0.00298 |
+|    value_loss           | 1.06     |
+| stat/                   |          |
+|    constraint_violation | 1.74e+04 |
+|    ep_constraint_vio... | 27.8     |
+|    ep_length            | 150      |
+|    ep_return            | 109      |
+|    ep_reward            | 0.73     |
+| stat_eval/              |          |
+|    constraint_violation | 2        |
+|    ep_length            | 150      |
+|    ep_return            | 134      |
+|    ep_reward            | 0.891    |
+|    mse                  | 170      |
+| time/                   |          |
+|    progress             | 0.6      |
+|    step                 | 3.6e+04  |
+|    step_time            | 0.678    |
+--------------------------------------
+
+2023-07-24 11:19:02,020 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:03,111 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 141.379 +/- 3.958
+2023-07-24 11:19:03,118 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00185  |
+|    entropy_loss         | -0.241   |
+|    policy_loss          | 0.0106   |
+|    value_loss           | 1.62     |
+| stat/                   |          |
+|    constraint_violation | 1.8e+04  |
+|    ep_constraint_vio... | 26.2     |
+|    ep_length            | 150      |
+|    ep_return            | 113      |
+|    ep_reward            | 0.752    |
+| stat_eval/              |          |
+|    constraint_violation | 5.1      |
+|    ep_length            | 150      |
+|    ep_return            | 141      |
+|    ep_reward            | 0.943    |
+|    mse                  | 183      |
+| time/                   |          |
+|    progress             | 0.65     |
+|    step                 | 3.9e+04  |
+|    step_time            | 0.689    |
+--------------------------------------
+
+2023-07-24 11:19:06,449 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:07,569 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 137.302 +/- 6.833
+2023-07-24 11:19:07,572 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0214   |
+|    entropy_loss         | -0.196   |
+|    policy_loss          | -0.00357 |
+|    value_loss           | 0.526    |
+| stat/                   |          |
+|    constraint_violation | 1.88e+04 |
+|    ep_constraint_vio... | 34.5     |
+|    ep_length            | 124      |
+|    ep_return            | 91.4     |
+|    ep_reward            | 0.627    |
+| stat_eval/              |          |
+|    constraint_violation | 4.1      |
+|    ep_length            | 150      |
+|    ep_return            | 137      |
+|    ep_reward            | 0.915    |
+|    mse                  | 148      |
+| time/                   |          |
+|    progress             | 0.7      |
+|    step                 | 4.2e+04  |
+|    step_time            | 0.685    |
+--------------------------------------
+
+2023-07-24 11:19:10,932 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:11,991 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 139.837 +/- 4.933
+2023-07-24 11:19:11,994 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00365  |
+|    entropy_loss         | -0.109   |
+|    policy_loss          | -0.00271 |
+|    value_loss           | 0.292    |
+| stat/                   |          |
+|    constraint_violation | 1.92e+04 |
+|    ep_constraint_vio... | 25       |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.815    |
+| stat_eval/              |          |
+|    constraint_violation | 7.7      |
+|    ep_length            | 150      |
+|    ep_return            | 140      |
+|    ep_reward            | 0.932    |
+|    mse                  | 203      |
+| time/                   |          |
+|    progress             | 0.75     |
+|    step                 | 4.5e+04  |
+|    step_time            | 0.738    |
+--------------------------------------
+
+2023-07-24 11:19:15,192 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:16,291 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 140.741 +/- 4.619
+2023-07-24 11:19:16,294 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0122   |
+|    entropy_loss         | -0.0195  |
+|    policy_loss          | -0.0114  |
+|    value_loss           | 0.368    |
+| stat/                   |          |
+|    constraint_violation | 1.98e+04 |
+|    ep_constraint_vio... | 40.1     |
+|    ep_length            | 150      |
+|    ep_return            | 121      |
+|    ep_reward            | 0.81     |
+| stat_eval/              |          |
+|    constraint_violation | 6.2      |
+|    ep_length            | 150      |
+|    ep_return            | 141      |
+|    ep_reward            | 0.938    |
+|    mse                  | 187      |
+| time/                   |          |
+|    progress             | 0.8      |
+|    step                 | 4.8e+04  |
+|    step_time            | 0.632    |
+--------------------------------------
+
+2023-07-24 11:19:19,668 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:20,749 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 140.522 +/- 4.323
+2023-07-24 11:19:20,752 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0148   |
+|    entropy_loss         | 0.0545   |
+|    policy_loss          | 0.00234  |
+|    value_loss           | 0.276    |
+| stat/                   |          |
+|    constraint_violation | 2.04e+04 |
+|    ep_constraint_vio... | 29.7     |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.832    |
+| stat_eval/              |          |
+|    constraint_violation | 7.2      |
+|    ep_length            | 150      |
+|    ep_return            | 141      |
+|    ep_reward            | 0.937    |
+|    mse                  | 198      |
+| time/                   |          |
+|    progress             | 0.85     |
+|    step                 | 5.1e+04  |
+|    step_time            | 0.645    |
+--------------------------------------
+
+2023-07-24 11:19:24,228 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:25,344 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 141.837 +/- 3.090
+2023-07-24 11:19:25,350 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00921  |
+|    entropy_loss         | 0.148    |
+|    policy_loss          | -0.00987 |
+|    value_loss           | 0.15     |
+| stat/                   |          |
+|    constraint_violation | 2.1e+04  |
+|    ep_constraint_vio... | 28.5     |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+| stat_eval/              |          |
+|    constraint_violation | 13.5     |
+|    ep_length            | 150      |
+|    ep_return            | 142      |
+|    ep_reward            | 0.946    |
+|    mse                  | 213      |
+| time/                   |          |
+|    progress             | 0.9      |
+|    step                 | 5.4e+04  |
+|    step_time            | 0.668    |
+--------------------------------------
+
+2023-07-24 11:19:28,623 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:29,716 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 141.674 +/- 4.022
+2023-07-24 11:19:29,719 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00799  |
+|    entropy_loss         | 0.184    |
+|    policy_loss          | -0.00499 |
+|    value_loss           | 0.393    |
+| stat/                   |          |
+|    constraint_violation | 2.16e+04 |
+|    ep_constraint_vio... | 22.5     |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.862    |
+| stat_eval/              |          |
+|    constraint_violation | 6        |
+|    ep_length            | 150      |
+|    ep_return            | 142      |
+|    ep_reward            | 0.944    |
+|    mse                  | 174      |
+| time/                   |          |
+|    progress             | 0.95     |
+|    step                 | 5.7e+04  |
+|    step_time            | 0.666    |
+--------------------------------------
+
+2023-07-24 11:19:33,052 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:34,169 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 139.249 +/- 5.594
+2023-07-24 11:19:34,171 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0165   |
+|    entropy_loss         | 0.226    |
+|    policy_loss          | -0.00232 |
+|    value_loss           | 0.115    |
+| stat/                   |          |
+|    constraint_violation | 2.2e+04  |
+|    ep_constraint_vio... | 20.6     |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.881    |
+| stat_eval/              |          |
+|    constraint_violation | 13.5     |
+|    ep_length            | 150      |
+|    ep_return            | 139      |
+|    ep_reward            | 0.928    |
+|    mse                  | 212      |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+04    |
+|    step_time            | 0.647    |
+--------------------------------------
+
+Training done.
+2023-07-24 11:19:37,569 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:38,656 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 142.321 +/- 3.408
+2023-07-24 11:19:38,662 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.00637  |
+|    entropy_loss         | 0.287    |
+|    policy_loss          | 0.000737 |
+|    value_loss           | 0.214    |
+| stat/                   |          |
+|    constraint_violation | 522      |
+|    ep_constraint_vio... | 27.3     |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.863    |
+| stat_eval/              |          |
+|    constraint_violation | 8.1      |
+|    ep_length            | 150      |
+|    ep_return            | 142      |
+|    ep_reward            | 0.949    |
+|    mse                  | 188      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.692    |
+--------------------------------------
+
+2023-07-24 11:19:42,033 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:43,185 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 142.294 +/- 4.125
+2023-07-24 11:19:43,188 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 0        |
+|    lambda training step | 1        |
+|    policy update step   | 1        |
+|    soft_lambda          | 0        |
+| loss/                   |          |
+|    approx_kl            | 0.0117   |
+|    entropy_loss         | 0.376    |
+|    policy_loss          | -0.00456 |
+|    value_loss           | 0.0712   |
+| stat/                   |          |
+|    constraint_violation | 986      |
+|    ep_constraint_vio... | 20.4     |
+|    ep_length            | 150      |
+|    ep_return            | 135      |
+|    ep_reward            | 0.903    |
+| stat_eval/              |          |
+|    constraint_violation | 8.7      |
+|    ep_length            | 150      |
+|    ep_return            | 142      |
+|    ep_reward            | 0.949    |
+|    mse                  | 199      |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.676    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 142.562
+←[33maverage_rmse←[0m: 1.131
+←[33mrmse←[0m: 1.131
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 1.131
+←[33mfailure_rate←[0m: 1.000
+←[33maverage_constraint_violation←[0m: 9.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 9.000
+Evaluation done.
+violated
+True
+violation steps
+[ 0  1  2  3  6  7  8  9 10 11]
+1
+2023-07-24 11:19:46,762 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:47,847 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 141.028 +/- 6.320
+2023-07-24 11:19:47,851 :
+---------------------------------------
+| lambda/                 |           |
+|    hard_lambda          | 82        |
+|    lambda training step | 2         |
+|    policy update step   | 1         |
+|    soft_lambda          | 4.15      |
+| loss/                   |           |
+|    approx_kl            | 0.0197    |
+|    entropy_loss         | 0.385     |
+|    policy_loss          | -0.000865 |
+|    value_loss           | 1.89      |
+| stat/                   |           |
+|    constraint_violation | 498       |
+|    ep_constraint_vio... | 27.6      |
+|    ep_length            | 150       |
+|    ep_return            | 130       |
+|    ep_reward            | 0.87      |
+| stat_eval/              |           |
+|    constraint_violation | 6.5       |
+|    ep_length            | 150       |
+|    ep_return            | 141       |
+|    ep_reward            | 0.94      |
+|    mse                  | 157       |
+| time/                   |           |
+|    progress             | 0.5       |
+|    step                 | 3e+03     |
+|    step_time            | 0.629     |
+---------------------------------------
+
+2023-07-24 11:19:51,036 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:52,137 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 134.244 +/- 5.984
+2023-07-24 11:19:52,140 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 82       |
+|    lambda training step | 2        |
+|    policy update step   | 1        |
+|    soft_lambda          | 4.15     |
+| loss/                   |          |
+|    approx_kl            | 0.0305   |
+|    entropy_loss         | 0.394    |
+|    policy_loss          | -0.0126  |
+|    value_loss           | 2.16     |
+| stat/                   |          |
+|    constraint_violation | 731      |
+|    ep_constraint_vio... | 7.3      |
+|    ep_length            | 150      |
+|    ep_return            | 133      |
+|    ep_reward            | 0.889    |
+| stat_eval/              |          |
+|    constraint_violation | 5.2      |
+|    ep_length            | 150      |
+|    ep_return            | 134      |
+|    ep_reward            | 0.895    |
+|    mse                  | 106      |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.643    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 137.311
+←[33maverage_rmse←[0m: 0.780
+←[33mrmse←[0m: 0.780
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.780
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[0 1 2 6 7 8 9]
+1
+2023-07-24 11:19:55,704 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:19:56,795 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.212 +/- 5.904
+2023-07-24 11:19:56,798 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 3        |
+|    policy update step   | 1        |
+|    soft_lambda          | 8.3      |
+| loss/                   |          |
+|    approx_kl            | 0.0359   |
+|    entropy_loss         | 0.397    |
+|    policy_loss          | -0.0121  |
+|    value_loss           | 3.95     |
+| stat/                   |          |
+|    constraint_violation | 94       |
+|    ep_constraint_vio... | 3.1      |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.826    |
+| stat_eval/              |          |
+|    constraint_violation | 4.1      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.868    |
+|    mse                  | 75.3     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.611    |
+--------------------------------------
+
+2023-07-24 11:20:00,180 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:01,352 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.853 +/- 6.593
+2023-07-24 11:20:01,356 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 3        |
+|    policy update step   | 1        |
+|    soft_lambda          | 8.3      |
+| loss/                   |          |
+|    approx_kl            | 0.0105   |
+|    entropy_loss         | 0.411    |
+|    policy_loss          | 0.00707  |
+|    value_loss           | 0.938    |
+| stat/                   |          |
+|    constraint_violation | 184      |
+|    ep_constraint_vio... | 3.9      |
+|    ep_length            | 150      |
+|    ep_return            | 120      |
+|    ep_reward            | 0.801    |
+| stat_eval/              |          |
+|    constraint_violation | 5.2      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.846    |
+|    mse                  | 71.1     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.719    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.302
+←[33maverage_rmse←[0m: 0.584
+←[33mrmse←[0m: 0.584
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.584
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[ 0  1  2  3  6  7  8  9 10]
+1
+2023-07-24 11:20:05,137 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:06,210 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 121.948 +/- 6.198
+2023-07-24 11:20:06,213 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 4        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0142   |
+|    entropy_loss         | 0.436    |
+|    policy_loss          | -0.00396 |
+|    value_loss           | 0.724    |
+| stat/                   |          |
+|    constraint_violation | 172      |
+|    ep_constraint_vio... | 10.5     |
+|    ep_length            | 138      |
+|    ep_return            | 104      |
+|    ep_reward            | 0.7      |
+| stat_eval/              |          |
+|    constraint_violation | 3.6      |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.813    |
+|    mse                  | 53.3     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.674    |
+--------------------------------------
+
+2023-07-24 11:20:09,535 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:10,619 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 125.483 +/- 4.069
+2023-07-24 11:20:10,624 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 4        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0558   |
+|    entropy_loss         | 0.478    |
+|    policy_loss          | -0.0215  |
+|    value_loss           | 5.1      |
+| stat/                   |          |
+|    constraint_violation | 286      |
+|    ep_constraint_vio... | 5.4      |
+|    ep_length            | 137      |
+|    ep_return            | 107      |
+|    ep_reward            | 0.724    |
+| stat_eval/              |          |
+|    constraint_violation | 2.8      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.837    |
+|    mse                  | 55.3     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.636    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 127.358
+←[33maverage_rmse←[0m: 0.540
+←[33mrmse←[0m: 0.540
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.540
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:20:14,385 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:15,469 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.115 +/- 4.864
+2023-07-24 11:20:15,474 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 5        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0185   |
+|    entropy_loss         | 0.5      |
+|    policy_loss          | -0.00245 |
+|    value_loss           | 0.4      |
+| stat/                   |          |
+|    constraint_violation | 122      |
+|    ep_constraint_vio... | 9.8      |
+|    ep_length            | 150      |
+|    ep_return            | 118      |
+|    ep_reward            | 0.788    |
+| stat_eval/              |          |
+|    constraint_violation | 4        |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.854    |
+|    mse                  | 69.2     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.727    |
+--------------------------------------
+
+2023-07-24 11:20:18,763 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:19,828 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.137 +/- 5.309
+2023-07-24 11:20:19,831 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 5        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0179   |
+|    entropy_loss         | 0.519    |
+|    policy_loss          | -0.00383 |
+|    value_loss           | 4.35     |
+| stat/                   |          |
+|    constraint_violation | 209      |
+|    ep_constraint_vio... | 2.4      |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.828    |
+| stat_eval/              |          |
+|    constraint_violation | 8.9      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.841    |
+|    mse                  | 77       |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.651    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.436
+←[33maverage_rmse←[0m: 0.588
+←[33mrmse←[0m: 0.588
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.588
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2 7 8]
+0
+2023-07-24 11:20:23,426 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:24,337 : Eval | ep_lengths 113.00 +/- 56.64 | ep_return 89.716 +/- 57.261
+2023-07-24 11:20:24,341 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 6        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0213   |
+|    entropy_loss         | 0.534    |
+|    policy_loss          | 0.00303  |
+|    value_loss           | 0.29     |
+| stat/                   |          |
+|    constraint_violation | 80       |
+|    ep_constraint_vio... | 7.1      |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.817    |
+| stat_eval/              |          |
+|    constraint_violation | 14.5     |
+|    ep_length            | 113      |
+|    ep_return            | 89.7     |
+|    ep_reward            | 0.619    |
+|    mse                  | 193      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.667    |
+--------------------------------------
+
+2023-07-24 11:20:27,583 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:28,687 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.716 +/- 5.044
+2023-07-24 11:20:28,691 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 6        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0363   |
+|    entropy_loss         | 0.548    |
+|    policy_loss          | 0.00736  |
+|    value_loss           | 1.12     |
+| stat/                   |          |
+|    constraint_violation | 333      |
+|    ep_constraint_vio... | 11       |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.811    |
+| stat_eval/              |          |
+|    constraint_violation | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.845    |
+|    mse                  | 70.5     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.633    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 128.321
+←[33maverage_rmse←[0m: 0.573
+←[33mrmse←[0m: 0.573
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.573
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:20:32,281 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:33,393 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.384 +/- 3.453
+2023-07-24 11:20:33,396 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 7        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0466   |
+|    entropy_loss         | 0.578    |
+|    policy_loss          | -0.00153 |
+|    value_loss           | 1.43     |
+| stat/                   |          |
+|    constraint_violation | 88       |
+|    ep_constraint_vio... | 5.7      |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.814    |
+| stat_eval/              |          |
+|    constraint_violation | 1.6      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 59.4     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.616    |
+--------------------------------------
+
+2023-07-24 11:20:36,695 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:37,792 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.420 +/- 3.613
+2023-07-24 11:20:37,795 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 7        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0254   |
+|    entropy_loss         | 0.61     |
+|    policy_loss          | -0.00306 |
+|    value_loss           | 0.137    |
+| stat/                   |          |
+|    constraint_violation | 188      |
+|    ep_constraint_vio... | 4.3      |
+|    ep_length            | 150      |
+|    ep_return            | 122      |
+|    ep_reward            | 0.812    |
+| stat_eval/              |          |
+|    constraint_violation | 4.6      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 74.8     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.617    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 131.849
+←[33maverage_rmse←[0m: 0.642
+←[33mrmse←[0m: 0.642
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.642
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1]
+0
+2023-07-24 11:20:41,404 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:42,486 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.683 +/- 5.076
+2023-07-24 11:20:42,489 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 8        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0181   |
+|    entropy_loss         | 0.627    |
+|    policy_loss          | -0.00306 |
+|    value_loss           | 0.572    |
+| stat/                   |          |
+|    constraint_violation | 171      |
+|    ep_constraint_vio... | 6.5      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.833    |
+| stat_eval/              |          |
+|    constraint_violation | 5.1      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+|    mse                  | 74.1     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.676    |
+--------------------------------------
+
+2023-07-24 11:20:45,954 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:47,055 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.012 +/- 3.969
+2023-07-24 11:20:47,058 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 8        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.00263  |
+|    entropy_loss         | 0.65     |
+|    policy_loss          | -0.00642 |
+|    value_loss           | 0.276    |
+| stat/                   |          |
+|    constraint_violation | 332      |
+|    ep_constraint_vio... | 9.8      |
+|    ep_length            | 138      |
+|    ep_return            | 113      |
+|    ep_reward            | 0.757    |
+| stat_eval/              |          |
+|    constraint_violation | 5.9      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.86     |
+|    mse                  | 72.7     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.699    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 130.942
+←[33maverage_rmse←[0m: 0.625
+←[33mrmse←[0m: 0.625
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.625
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:20:50,739 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:51,835 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.041 +/- 4.590
+2023-07-24 11:20:51,838 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 9        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0122   |
+|    entropy_loss         | 0.668    |
+|    policy_loss          | 0.00706  |
+|    value_loss           | 0.348    |
+| stat/                   |          |
+|    constraint_violation | 165      |
+|    ep_constraint_vio... | 6        |
+|    ep_length            | 137      |
+|    ep_return            | 114      |
+|    ep_reward            | 0.766    |
+| stat_eval/              |          |
+|    constraint_violation | 5.9      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.88     |
+|    mse                  | 80.8     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.67     |
+--------------------------------------
+
+2023-07-24 11:20:55,190 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:20:56,321 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.560 +/- 4.136
+2023-07-24 11:20:56,324 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 9        |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.00728  |
+|    entropy_loss         | 0.696    |
+|    policy_loss          | 0.00062  |
+|    value_loss           | 0.407    |
+| stat/                   |          |
+|    constraint_violation | 370      |
+|    ep_constraint_vio... | 11.3     |
+|    ep_length            | 150      |
+|    ep_return            | 123      |
+|    ep_reward            | 0.82     |
+| stat_eval/              |          |
+|    constraint_violation | 4.6      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.844    |
+|    mse                  | 64.9     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.695    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.021
+←[33maverage_rmse←[0m: 0.585
+←[33mrmse←[0m: 0.585
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.585
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:21:00,078 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:01,105 : Eval | ep_lengths 138.00 +/- 36.00 | ep_return 118.768 +/- 38.834
+2023-07-24 11:21:01,109 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 10       |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0166   |
+|    entropy_loss         | 0.733    |
+|    policy_loss          | -0.00114 |
+|    value_loss           | 1.97     |
+| stat/                   |          |
+|    constraint_violation | 96       |
+|    ep_constraint_vio... | 5.4      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.842    |
+| stat_eval/              |          |
+|    constraint_violation | 4.6      |
+|    ep_length            | 138      |
+|    ep_return            | 119      |
+|    ep_reward            | 0.799    |
+|    mse                  | 97.7     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.648    |
+--------------------------------------
+
+2023-07-24 11:21:04,416 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:05,514 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 127.096 +/- 3.959
+2023-07-24 11:21:05,517 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 10       |
+|    policy update step   | 1        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0298   |
+|    entropy_loss         | 0.766    |
+|    policy_loss          | 0.00217  |
+|    value_loss           | 1.41     |
+| stat/                   |          |
+|    constraint_violation | 159      |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.846    |
+| stat_eval/              |          |
+|    constraint_violation | 6.1      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.847    |
+|    mse                  | 67.8     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.632    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.798
+←[33maverage_rmse←[0m: 0.601
+←[33mrmse←[0m: 0.601
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.601
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[0 1 2 6 7 8 9]
+1
+2023-07-24 11:21:09,259 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:10,358 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.318 +/- 4.825
+2023-07-24 11:21:10,360 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0142   |
+|    entropy_loss         | 0.793    |
+|    policy_loss          | 0.00373  |
+|    value_loss           | 0.424    |
+| stat/                   |          |
+|    constraint_violation | 115      |
+|    ep_constraint_vio... | 7.4      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.833    |
+| stat_eval/              |          |
+|    constraint_violation | 10.9     |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.842    |
+|    mse                  | 86.9     |
+| time/                   |          |
+|    progress             | 0.05     |
+|    step                 | 3e+03    |
+|    step_time            | 0.657    |
+--------------------------------------
+
+2023-07-24 11:21:13,628 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:14,591 : Eval | ep_lengths 123.60 +/- 52.81 | ep_return 105.598 +/- 52.425
+2023-07-24 11:21:14,594 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0324   |
+|    entropy_loss         | 0.797    |
+|    policy_loss          | -0.00614 |
+|    value_loss           | 2.19     |
+| stat/                   |          |
+|    constraint_violation | 318      |
+|    ep_constraint_vio... | 8.2      |
+|    ep_length            | 137      |
+|    ep_return            | 114      |
+|    ep_reward            | 0.765    |
+| stat_eval/              |          |
+|    constraint_violation | 7.6      |
+|    ep_length            | 124      |
+|    ep_return            | 106      |
+|    ep_reward            | 0.713    |
+|    mse                  | 126      |
+| time/                   |          |
+|    progress             | 0.1      |
+|    step                 | 6e+03    |
+|    step_time            | 0.652    |
+--------------------------------------
+
+2023-07-24 11:21:17,995 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:19,094 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.885 +/- 4.104
+2023-07-24 11:21:19,098 :
+---------------------------------------
+| lambda/                 |           |
+|    hard_lambda          | 122       |
+|    lambda training step | 11        |
+|    policy update step   | 2         |
+|    soft_lambda          | 12.4      |
+| loss/                   |           |
+|    approx_kl            | 0.0164    |
+|    entropy_loss         | 0.809     |
+|    policy_loss          | -0.000234 |
+|    value_loss           | 0.119     |
+| stat/                   |           |
+|    constraint_violation | 527       |
+|    ep_constraint_vio... | 5.1       |
+|    ep_length            | 150       |
+|    ep_return            | 126       |
+|    ep_reward            | 0.84      |
+| stat_eval/              |           |
+|    constraint_violation | 8.8       |
+|    ep_length            | 150       |
+|    ep_return            | 127       |
+|    ep_reward            | 0.846     |
+|    mse                  | 77.9      |
+| time/                   |           |
+|    progress             | 0.15      |
+|    step                 | 9e+03     |
+|    step_time            | 0.657     |
+---------------------------------------
+
+2023-07-24 11:21:22,361 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:23,526 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.821 +/- 5.108
+2023-07-24 11:21:23,529 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0713   |
+|    entropy_loss         | 0.829    |
+|    policy_loss          | 0.00833  |
+|    value_loss           | 15.5     |
+| stat/                   |          |
+|    constraint_violation | 680      |
+|    ep_constraint_vio... | 11       |
+|    ep_length            | 128      |
+|    ep_return            | 102      |
+|    ep_reward            | 0.694    |
+| stat_eval/              |          |
+|    constraint_violation | 9.4      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.845    |
+|    mse                  | 82.7     |
+| time/                   |          |
+|    progress             | 0.2      |
+|    step                 | 1.2e+04  |
+|    step_time            | 0.615    |
+--------------------------------------
+
+2023-07-24 11:21:26,917 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:28,056 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 127.632 +/- 4.969
+2023-07-24 11:21:28,059 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0155   |
+|    entropy_loss         | 0.84     |
+|    policy_loss          | -0.00609 |
+|    value_loss           | 0.334    |
+| stat/                   |          |
+|    constraint_violation | 746      |
+|    ep_constraint_vio... | 2        |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.847    |
+| stat_eval/              |          |
+|    constraint_violation | 7.5      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.851    |
+|    mse                  | 84.5     |
+| time/                   |          |
+|    progress             | 0.25     |
+|    step                 | 1.5e+04  |
+|    step_time            | 0.709    |
+--------------------------------------
+
+2023-07-24 11:21:31,406 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:32,520 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.560 +/- 3.952
+2023-07-24 11:21:32,524 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0252   |
+|    entropy_loss         | 0.854    |
+|    policy_loss          | 0.0155   |
+|    value_loss           | 1.85     |
+| stat/                   |          |
+|    constraint_violation | 909      |
+|    ep_constraint_vio... | 8.6      |
+|    ep_length            | 138      |
+|    ep_return            | 113      |
+|    ep_reward            | 0.759    |
+| stat_eval/              |          |
+|    constraint_violation | 4.7      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.864    |
+|    mse                  | 72       |
+| time/                   |          |
+|    progress             | 0.3      |
+|    step                 | 1.8e+04  |
+|    step_time            | 0.668    |
+--------------------------------------
+
+2023-07-24 11:21:35,797 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:36,920 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 124.763 +/- 3.246
+2023-07-24 11:21:36,925 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0211   |
+|    entropy_loss         | 0.876    |
+|    policy_loss          | -0.00198 |
+|    value_loss           | 0.231    |
+| stat/                   |          |
+|    constraint_violation | 1.12e+03 |
+|    ep_constraint_vio... | 11       |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.827    |
+| stat_eval/              |          |
+|    constraint_violation | 15.4     |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.832    |
+|    mse                  | 109      |
+| time/                   |          |
+|    progress             | 0.35     |
+|    step                 | 2.1e+04  |
+|    step_time            | 0.669    |
+--------------------------------------
+
+2023-07-24 11:21:40,350 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:41,371 : Eval | ep_lengths 137.80 +/- 36.60 | ep_return 115.516 +/- 37.921
+2023-07-24 11:21:41,374 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.00745  |
+|    entropy_loss         | 0.882    |
+|    policy_loss          | 0.00621  |
+|    value_loss           | 1.01     |
+| stat/                   |          |
+|    constraint_violation | 1.26e+03 |
+|    ep_constraint_vio... | 9.2      |
+|    ep_length            | 137      |
+|    ep_return            | 114      |
+|    ep_reward            | 0.772    |
+| stat_eval/              |          |
+|    constraint_violation | 13.4     |
+|    ep_length            | 138      |
+|    ep_return            | 116      |
+|    ep_reward            | 0.778    |
+|    mse                  | 130      |
+| time/                   |          |
+|    progress             | 0.4      |
+|    step                 | 2.4e+04  |
+|    step_time            | 0.684    |
+--------------------------------------
+
+2023-07-24 11:21:44,722 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:45,826 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.967 +/- 4.302
+2023-07-24 11:21:45,829 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.00724  |
+|    entropy_loss         | 0.91     |
+|    policy_loss          | 0.00884  |
+|    value_loss           | 0.123    |
+| stat/                   |          |
+|    constraint_violation | 1.39e+03 |
+|    ep_constraint_vio... | 2.9      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.838    |
+| stat_eval/              |          |
+|    constraint_violation | 3.5      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.86     |
+|    mse                  | 70.9     |
+| time/                   |          |
+|    progress             | 0.45     |
+|    step                 | 2.7e+04  |
+|    step_time            | 0.669    |
+--------------------------------------
+
+2023-07-24 11:21:49,208 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:50,300 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 124.510 +/- 6.034
+2023-07-24 11:21:50,303 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0213   |
+|    entropy_loss         | 0.936    |
+|    policy_loss          | -0.00274 |
+|    value_loss           | 8.97     |
+| stat/                   |          |
+|    constraint_violation | 1.55e+03 |
+|    ep_constraint_vio... | 6.7      |
+|    ep_length            | 138      |
+|    ep_return            | 113      |
+|    ep_reward            | 0.757    |
+| stat_eval/              |          |
+|    constraint_violation | 5.6      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.83     |
+|    mse                  | 65.6     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+04    |
+|    step_time            | 0.66     |
+--------------------------------------
+
+2023-07-24 11:21:53,528 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:54,630 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.691 +/- 3.953
+2023-07-24 11:21:54,633 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0319   |
+|    entropy_loss         | 0.957    |
+|    policy_loss          | 0.00705  |
+|    value_loss           | 0.503    |
+| stat/                   |          |
+|    constraint_violation | 1.63e+03 |
+|    ep_constraint_vio... | 2.4      |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.827    |
+| stat_eval/              |          |
+|    constraint_violation | 1.5      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.845    |
+|    mse                  | 58.6     |
+| time/                   |          |
+|    progress             | 0.55     |
+|    step                 | 3.3e+04  |
+|    step_time            | 0.625    |
+--------------------------------------
+
+2023-07-24 11:21:57,906 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:21:59,037 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 127.698 +/- 5.631
+2023-07-24 11:21:59,040 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0668   |
+|    entropy_loss         | 0.97     |
+|    policy_loss          | 0.0197   |
+|    value_loss           | 3.2      |
+| stat/                   |          |
+|    constraint_violation | 1.68e+03 |
+|    ep_constraint_vio... | 4.7      |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.825    |
+| stat_eval/              |          |
+|    constraint_violation | 6.8      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.851    |
+|    mse                  | 75.4     |
+| time/                   |          |
+|    progress             | 0.6      |
+|    step                 | 3.6e+04  |
+|    step_time            | 0.615    |
+--------------------------------------
+
+2023-07-24 11:22:02,308 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:03,408 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.014 +/- 3.421
+2023-07-24 11:22:03,411 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0191   |
+|    entropy_loss         | 0.999    |
+|    policy_loss          | -0.00172 |
+|    value_loss           | 0.403    |
+| stat/                   |          |
+|    constraint_violation | 1.75e+03 |
+|    ep_constraint_vio... | 1.9      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.857    |
+| stat_eval/              |          |
+|    constraint_violation | 1.2      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.88     |
+|    mse                  | 64.8     |
+| time/                   |          |
+|    progress             | 0.65     |
+|    step                 | 3.9e+04  |
+|    step_time            | 0.655    |
+--------------------------------------
+
+2023-07-24 11:22:06,703 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:07,801 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 125.548 +/- 4.607
+2023-07-24 11:22:07,804 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0131   |
+|    entropy_loss         | 1.02     |
+|    policy_loss          | 0.00776  |
+|    value_loss           | 0.214    |
+| stat/                   |          |
+|    constraint_violation | 1.85e+03 |
+|    ep_constraint_vio... | 7.2      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.833    |
+| stat_eval/              |          |
+|    constraint_violation | 6.8      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.837    |
+|    mse                  | 75.6     |
+| time/                   |          |
+|    progress             | 0.7      |
+|    step                 | 4.2e+04  |
+|    step_time            | 0.672    |
+--------------------------------------
+
+2023-07-24 11:22:11,146 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:12,273 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.347 +/- 4.621
+2023-07-24 11:22:12,276 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0191   |
+|    entropy_loss         | 1.05     |
+|    policy_loss          | -0.00428 |
+|    value_loss           | 0.113    |
+| stat/                   |          |
+|    constraint_violation | 1.99e+03 |
+|    ep_constraint_vio... | 9.2      |
+|    ep_length            | 150      |
+|    ep_return            | 124      |
+|    ep_reward            | 0.828    |
+| stat_eval/              |          |
+|    constraint_violation | 5.6      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.862    |
+|    mse                  | 78.7     |
+| time/                   |          |
+|    progress             | 0.75     |
+|    step                 | 4.5e+04  |
+|    step_time            | 0.645    |
+--------------------------------------
+
+2023-07-24 11:22:15,632 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:16,751 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.479 +/- 3.821
+2023-07-24 11:22:16,754 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0077   |
+|    entropy_loss         | 1.09     |
+|    policy_loss          | -0.00306 |
+|    value_loss           | 0.0848   |
+| stat/                   |          |
+|    constraint_violation | 2.14e+03 |
+|    ep_constraint_vio... | 9.3      |
+|    ep_length            | 150      |
+|    ep_return            | 123      |
+|    ep_reward            | 0.819    |
+| stat_eval/              |          |
+|    constraint_violation | 4.3      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 70.3     |
+| time/                   |          |
+|    progress             | 0.8      |
+|    step                 | 4.8e+04  |
+|    step_time            | 0.657    |
+--------------------------------------
+
+2023-07-24 11:22:20,084 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:21,173 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.018 +/- 3.143
+2023-07-24 11:22:21,176 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0128   |
+|    entropy_loss         | 1.11     |
+|    policy_loss          | -0.0143  |
+|    value_loss           | 0.264    |
+| stat/                   |          |
+|    constraint_violation | 2.34e+03 |
+|    ep_constraint_vio... | 10.3     |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.84     |
+| stat_eval/              |          |
+|    constraint_violation | 3.8      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.873    |
+|    mse                  | 70.2     |
+| time/                   |          |
+|    progress             | 0.85     |
+|    step                 | 5.1e+04  |
+|    step_time            | 0.714    |
+--------------------------------------
+
+2023-07-24 11:22:24,511 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:25,432 : Eval | ep_lengths 124.60 +/- 50.81 | ep_return 103.999 +/- 50.910
+2023-07-24 11:22:25,435 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.024    |
+|    entropy_loss         | 1.14     |
+|    policy_loss          | 0.00982  |
+|    value_loss           | 0.157    |
+| stat/                   |          |
+|    constraint_violation | 2.46e+03 |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.845    |
+| stat_eval/              |          |
+|    constraint_violation | 10.3     |
+|    ep_length            | 125      |
+|    ep_return            | 104      |
+|    ep_reward            | 0.711    |
+|    mse                  | 140      |
+| time/                   |          |
+|    progress             | 0.9      |
+|    step                 | 5.4e+04  |
+|    step_time            | 0.628    |
+--------------------------------------
+
+2023-07-24 11:22:28,656 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:29,818 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.678 +/- 3.755
+2023-07-24 11:22:29,822 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 12.4     |
+| loss/                   |          |
+|    approx_kl            | 0.0493   |
+|    entropy_loss         | 1.15     |
+|    policy_loss          | 0.0315   |
+|    value_loss           | 0.492    |
+| stat/                   |          |
+|    constraint_violation | 2.54e+03 |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.86     |
+| stat_eval/              |          |
+|    constraint_violation | 6.7      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.865    |
+|    mse                  | 78.6     |
+| time/                   |          |
+|    progress             | 0.95     |
+|    step                 | 5.7e+04  |
+|    step_time            | 0.627    |
+--------------------------------------
+
+2023-07-24 11:22:33,123 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:34,228 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.273 +/- 3.722
+2023-07-24 11:22:34,233 :
+---------------------------------------
+| lambda/                 |           |
+|    hard_lambda          | 122       |
+|    lambda training step | 11        |
+|    policy update step   | 2         |
+|    soft_lambda          | 12.4      |
+| loss/                   |           |
+|    approx_kl            | 0.0266    |
+|    entropy_loss         | 1.17      |
+|    policy_loss          | -0.000112 |
+|    value_loss           | 0.162     |
+| stat/                   |           |
+|    constraint_violation | 2.84e+03  |
+|    ep_constraint_vio... | 12.5      |
+|    ep_length            | 150       |
+|    ep_return            | 125       |
+|    ep_reward            | 0.834     |
+| stat_eval/              |           |
+|    constraint_violation | 3.4       |
+|    ep_length            | 150       |
+|    ep_return            | 131       |
+|    ep_reward            | 0.875     |
+|    mse                  | 69.7      |
+| time/                   |           |
+|    progress             | 1         |
+|    step                 | 6e+04     |
+|    step_time            | 0.637     |
+---------------------------------------
+
+Training done.
+2023-07-24 11:22:37,597 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:38,711 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.922 +/- 3.930
+2023-07-24 11:22:38,715 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0145   |
+|    entropy_loss         | 1.18     |
+|    policy_loss          | -0.00313 |
+|    value_loss           | 0.0731   |
+| stat/                   |          |
+|    constraint_violation | 235      |
+|    ep_constraint_vio... | 13.1     |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.831    |
+| stat_eval/              |          |
+|    constraint_violation | 3.3      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.866    |
+|    mse                  | 72.2     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.643    |
+--------------------------------------
+
+2023-07-24 11:22:41,984 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:43,084 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 125.801 +/- 4.521
+2023-07-24 11:22:43,087 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 11       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0177   |
+|    entropy_loss         | 1.2      |
+|    policy_loss          | -0.00519 |
+|    value_loss           | 0.418    |
+| stat/                   |          |
+|    constraint_violation | 431      |
+|    ep_constraint_vio... | 12.3     |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.832    |
+| stat_eval/              |          |
+|    constraint_violation | 9.3      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.839    |
+|    mse                  | 79.1     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.645    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.627
+←[33maverage_rmse←[0m: 0.608
+←[33mrmse←[0m: 0.608
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.608
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:22:46,674 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:47,792 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.353 +/- 4.663
+2023-07-24 11:22:47,795 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 12       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0229   |
+|    entropy_loss         | 1.23     |
+|    policy_loss          | -0.00766 |
+|    value_loss           | 0.234    |
+| stat/                   |          |
+|    constraint_violation | 179      |
+|    ep_constraint_vio... | 11.4     |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.832    |
+| stat_eval/              |          |
+|    constraint_violation | 7.3      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.856    |
+|    mse                  | 80.6     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.629    |
+--------------------------------------
+
+2023-07-24 11:22:51,097 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:52,210 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.748 +/- 4.925
+2023-07-24 11:22:52,213 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 12       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0472   |
+|    entropy_loss         | 1.24     |
+|    policy_loss          | 0.00324  |
+|    value_loss           | 1.26     |
+| stat/                   |          |
+|    constraint_violation | 265      |
+|    ep_constraint_vio... | 3.3      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.876    |
+| stat_eval/              |          |
+|    constraint_violation | 4.2      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.878    |
+|    mse                  | 77.7     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.679    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 132.053
+←[33maverage_rmse←[0m: 0.646
+←[33mrmse←[0m: 0.646
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.646
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2 7 8 9]
+0
+2023-07-24 11:22:55,907 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:22:57,005 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.566 +/- 3.723
+2023-07-24 11:22:57,008 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 13       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0235   |
+|    entropy_loss         | 1.26     |
+|    policy_loss          | 0.00725  |
+|    value_loss           | 0.0911   |
+| stat/                   |          |
+|    constraint_violation | 57       |
+|    ep_constraint_vio... | 2.5      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.864    |
+| stat_eval/              |          |
+|    constraint_violation | 2.3      |
+|    ep_length            | 150      |
+|    ep_return            | 133      |
+|    ep_reward            | 0.884    |
+|    mse                  | 70.8     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.658    |
+--------------------------------------
+
+2023-07-24 11:23:00,279 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:01,431 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.723 +/- 1.863
+2023-07-24 11:23:01,434 :
+---------------------------------------
+| lambda/                 |           |
+|    hard_lambda          | 122       |
+|    lambda training step | 13        |
+|    policy update step   | 2         |
+|    soft_lambda          | 16.6      |
+| loss/                   |           |
+|    approx_kl            | 0.0508    |
+|    entropy_loss         | 1.27      |
+|    policy_loss          | -0.000463 |
+|    value_loss           | 0.0796    |
+| stat/                   |           |
+|    constraint_violation | 249       |
+|    ep_constraint_vio... | 9.5       |
+|    ep_length            | 150       |
+|    ep_return            | 125       |
+|    ep_reward            | 0.835     |
+| stat_eval/              |           |
+|    constraint_violation | 0         |
+|    ep_length            | 150       |
+|    ep_return            | 131       |
+|    ep_reward            | 0.871     |
+|    mse                  | 56.1      |
+| time/                   |           |
+|    progress             | 1         |
+|    step                 | 6e+03     |
+|    step_time            | 0.643     |
+---------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 130.035
+←[33maverage_rmse←[0m: 0.593
+←[33mrmse←[0m: 0.593
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.593
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:23:05,094 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:06,201 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.982 +/- 4.331
+2023-07-24 11:23:06,204 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 14       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0635   |
+|    entropy_loss         | 1.28     |
+|    policy_loss          | 0.13     |
+|    value_loss           | 0.127    |
+| stat/                   |          |
+|    constraint_violation | 103      |
+|    ep_constraint_vio... | 7.2      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.843    |
+| stat_eval/              |          |
+|    constraint_violation | 6        |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.86     |
+|    mse                  | 66.7     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.643    |
+--------------------------------------
+
+2023-07-24 11:23:09,443 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:10,550 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.857 +/- 4.970
+2023-07-24 11:23:10,554 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 14       |
+|    policy update step   | 2        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0279   |
+|    entropy_loss         | 1.3      |
+|    policy_loss          | 0.0118   |
+|    value_loss           | 0.104    |
+| stat/                   |          |
+|    constraint_violation | 255      |
+|    ep_constraint_vio... | 3.1      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.862    |
+| stat_eval/              |          |
+|    constraint_violation | 13.1     |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.846    |
+|    mse                  | 97.5     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.656    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 131.348
+←[33maverage_rmse←[0m: 0.633
+←[33mrmse←[0m: 0.633
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.633
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:23:14,200 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:15,294 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.833 +/- 4.274
+2023-07-24 11:23:15,298 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0672   |
+|    entropy_loss         | 1.31     |
+|    policy_loss          | 0.0524   |
+|    value_loss           | 0.0654   |
+| stat/                   |          |
+|    constraint_violation | 163      |
+|    ep_constraint_vio... | 8.6      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.854    |
+| stat_eval/              |          |
+|    constraint_violation | 9.7      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.866    |
+|    mse                  | 88.5     |
+| time/                   |          |
+|    progress             | 0.05     |
+|    step                 | 3e+03    |
+|    step_time            | 0.596    |
+--------------------------------------
+
+2023-07-24 11:23:18,547 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:19,684 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.577 +/- 3.723
+2023-07-24 11:23:19,687 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0252   |
+|    entropy_loss         | 1.32     |
+|    policy_loss          | 0.0149   |
+|    value_loss           | 0.326    |
+| stat/                   |          |
+|    constraint_violation | 233      |
+|    ep_constraint_vio... | 4.2      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.883    |
+| stat_eval/              |          |
+|    constraint_violation | 7.1      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.877    |
+|    mse                  | 87.8     |
+| time/                   |          |
+|    progress             | 0.1      |
+|    step                 | 6e+03    |
+|    step_time            | 0.639    |
+--------------------------------------
+
+2023-07-24 11:23:22,958 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:23,804 : Eval | ep_lengths 111.50 +/- 58.83 | ep_return 94.170 +/- 59.912
+2023-07-24 11:23:23,807 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0234   |
+|    entropy_loss         | 1.33     |
+|    policy_loss          | -0.00026 |
+|    value_loss           | 0.683    |
+| stat/                   |          |
+|    constraint_violation | 447      |
+|    ep_constraint_vio... | 7.7      |
+|    ep_length            | 137      |
+|    ep_return            | 117      |
+|    ep_reward            | 0.785    |
+| stat_eval/              |          |
+|    constraint_violation | 9.3      |
+|    ep_length            | 112      |
+|    ep_return            | 94.2     |
+|    ep_reward            | 0.659    |
+|    mse                  | 151      |
+| time/                   |          |
+|    progress             | 0.15     |
+|    step                 | 9e+03    |
+|    step_time            | 0.679    |
+--------------------------------------
+
+2023-07-24 11:23:27,071 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:28,031 : Eval | ep_lengths 125.70 +/- 48.66 | ep_return 103.751 +/- 50.350
+2023-07-24 11:23:28,034 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0111   |
+|    entropy_loss         | 1.34     |
+|    policy_loss          | 0.000898 |
+|    value_loss           | 0.159    |
+| stat/                   |          |
+|    constraint_violation | 519      |
+|    ep_constraint_vio... | 4.5      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.866    |
+| stat_eval/              |          |
+|    constraint_violation | 13.7     |
+|    ep_length            | 126      |
+|    ep_return            | 104      |
+|    ep_reward            | 0.712    |
+|    mse                  | 170      |
+| time/                   |          |
+|    progress             | 0.2      |
+|    step                 | 1.2e+04  |
+|    step_time            | 0.659    |
+--------------------------------------
+
+2023-07-24 11:23:31,180 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:32,209 : Eval | ep_lengths 137.50 +/- 37.50 | ep_return 116.341 +/- 37.812
+2023-07-24 11:23:32,212 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0382   |
+|    entropy_loss         | 1.36     |
+|    policy_loss          | 0.00925  |
+|    value_loss           | 0.369    |
+| stat/                   |          |
+|    constraint_violation | 635      |
+|    ep_constraint_vio... | 3.6      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.867    |
+| stat_eval/              |          |
+|    constraint_violation | 10.3     |
+|    ep_length            | 138      |
+|    ep_return            | 116      |
+|    ep_reward            | 0.786    |
+|    mse                  | 96.5     |
+| time/                   |          |
+|    progress             | 0.25     |
+|    step                 | 1.5e+04  |
+|    step_time            | 0.617    |
+--------------------------------------
+
+2023-07-24 11:23:35,531 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:36,653 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.656 +/- 4.475
+2023-07-24 11:23:36,657 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0261   |
+|    entropy_loss         | 1.37     |
+|    policy_loss          | 0.0112   |
+|    value_loss           | 0.124    |
+| stat/                   |          |
+|    constraint_violation | 819      |
+|    ep_constraint_vio... | 9.9      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.838    |
+| stat_eval/              |          |
+|    constraint_violation | 7.7      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.864    |
+|    mse                  | 86.6     |
+| time/                   |          |
+|    progress             | 0.3      |
+|    step                 | 1.8e+04  |
+|    step_time            | 0.647    |
+--------------------------------------
+
+2023-07-24 11:23:39,859 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:40,865 : Eval | ep_lengths 137.10 +/- 38.70 | ep_return 117.874 +/- 38.598
+2023-07-24 11:23:40,868 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.03     |
+|    entropy_loss         | 1.38     |
+|    policy_loss          | 0.0145   |
+|    value_loss           | 0.287    |
+| stat/                   |          |
+|    constraint_violation | 1.04e+03 |
+|    ep_constraint_vio... | 11.8     |
+|    ep_length            | 114      |
+|    ep_return            | 92.3     |
+|    ep_reward            | 0.637    |
+| stat_eval/              |          |
+|    constraint_violation | 6.8      |
+|    ep_length            | 137      |
+|    ep_return            | 118      |
+|    ep_reward            | 0.796    |
+|    mse                  | 110      |
+| time/                   |          |
+|    progress             | 0.35     |
+|    step                 | 2.1e+04  |
+|    step_time            | 0.641    |
+--------------------------------------
+
+2023-07-24 11:23:44,182 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:44,943 : Eval | ep_lengths 100.00 +/- 61.31 | ep_return 79.686 +/- 63.026
+2023-07-24 11:23:44,947 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0977   |
+|    entropy_loss         | 1.4      |
+|    policy_loss          | 0.00611  |
+|    value_loss           | 0.339    |
+| stat/                   |          |
+|    constraint_violation | 1.14e+03 |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 137      |
+|    ep_return            | 117      |
+|    ep_reward            | 0.788    |
+| stat_eval/              |          |
+|    constraint_violation | 12.4     |
+|    ep_length            | 100      |
+|    ep_return            | 79.7     |
+|    ep_reward            | 0.564    |
+|    mse                  | 180      |
+| time/                   |          |
+|    progress             | 0.4      |
+|    step                 | 2.4e+04  |
+|    step_time            | 0.616    |
+--------------------------------------
+
+2023-07-24 11:23:48,190 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:49,107 : Eval | ep_lengths 123.40 +/- 53.23 | ep_return 103.140 +/- 51.000
+2023-07-24 11:23:49,110 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0897   |
+|    entropy_loss         | 1.39     |
+|    policy_loss          | 0.0234   |
+|    value_loss           | 1.61     |
+| stat/                   |          |
+|    constraint_violation | 1.37e+03 |
+|    ep_constraint_vio... | 10.4     |
+|    ep_length            | 110      |
+|    ep_return            | 90.4     |
+|    ep_reward            | 0.626    |
+| stat_eval/              |          |
+|    constraint_violation | 9.1      |
+|    ep_length            | 123      |
+|    ep_return            | 103      |
+|    ep_reward            | 0.7      |
+|    mse                  | 101      |
+| time/                   |          |
+|    progress             | 0.45     |
+|    step                 | 2.7e+04  |
+|    step_time            | 0.623    |
+--------------------------------------
+
+2023-07-24 11:23:52,254 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:53,089 : Eval | ep_lengths 111.50 +/- 58.90 | ep_return 90.700 +/- 58.212
+2023-07-24 11:23:53,092 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.11     |
+|    entropy_loss         | 1.4      |
+|    policy_loss          | 0.0137   |
+|    value_loss           | 3.45     |
+| stat/                   |          |
+|    constraint_violation | 1.63e+03 |
+|    ep_constraint_vio... | 11.5     |
+|    ep_length            | 112      |
+|    ep_return            | 90.8     |
+|    ep_reward            | 0.627    |
+| stat_eval/              |          |
+|    constraint_violation | 8.7      |
+|    ep_length            | 112      |
+|    ep_return            | 90.7     |
+|    ep_reward            | 0.624    |
+|    mse                  | 159      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+04    |
+|    step_time            | 0.621    |
+--------------------------------------
+
+2023-07-24 11:23:56,423 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:23:57,250 : Eval | ep_lengths 110.40 +/- 60.52 | ep_return 91.615 +/- 58.915
+2023-07-24 11:23:57,254 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0234   |
+|    entropy_loss         | 1.4      |
+|    policy_loss          | -0.00137 |
+|    value_loss           | 0.155    |
+| stat/                   |          |
+|    constraint_violation | 1.79e+03 |
+|    ep_constraint_vio... | 8.5      |
+|    ep_length            | 137      |
+|    ep_return            | 113      |
+|    ep_reward            | 0.764    |
+| stat_eval/              |          |
+|    constraint_violation | 8.7      |
+|    ep_length            | 110      |
+|    ep_return            | 91.6     |
+|    ep_reward            | 0.634    |
+|    mse                  | 132      |
+| time/                   |          |
+|    progress             | 0.55     |
+|    step                 | 3.3e+04  |
+|    step_time            | 0.63     |
+--------------------------------------
+
+2023-07-24 11:24:00,401 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:01,435 : Eval | ep_lengths 137.00 +/- 39.00 | ep_return 116.106 +/- 38.727
+2023-07-24 11:24:01,438 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.032    |
+|    entropy_loss         | 1.41     |
+|    policy_loss          | 0.000537 |
+|    value_loss           | 0.351    |
+| stat/                   |          |
+|    constraint_violation | 1.95e+03 |
+|    ep_constraint_vio... | 2.7      |
+|    ep_length            | 137      |
+|    ep_return            | 116      |
+|    ep_reward            | 0.779    |
+| stat_eval/              |          |
+|    constraint_violation | 5.6      |
+|    ep_length            | 137      |
+|    ep_return            | 116      |
+|    ep_reward            | 0.776    |
+|    mse                  | 103      |
+| time/                   |          |
+|    progress             | 0.6      |
+|    step                 | 3.6e+04  |
+|    step_time            | 0.639    |
+--------------------------------------
+
+2023-07-24 11:24:04,653 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:05,496 : Eval | ep_lengths 112.00 +/- 58.12 | ep_return 94.222 +/- 60.248
+2023-07-24 11:24:05,500 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0221   |
+|    entropy_loss         | 1.41     |
+|    policy_loss          | 0.0144   |
+|    value_loss           | 0.17     |
+| stat/                   |          |
+|    constraint_violation | 2.05e+03 |
+|    ep_constraint_vio... | 5        |
+|    ep_length            | 138      |
+|    ep_return            | 118      |
+|    ep_reward            | 0.791    |
+| stat_eval/              |          |
+|    constraint_violation | 8.6      |
+|    ep_length            | 112      |
+|    ep_return            | 94.2     |
+|    ep_reward            | 0.65     |
+|    mse                  | 176      |
+| time/                   |          |
+|    progress             | 0.65     |
+|    step                 | 3.9e+04  |
+|    step_time            | 0.722    |
+--------------------------------------
+
+2023-07-24 11:24:08,699 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:09,641 : Eval | ep_lengths 124.30 +/- 51.40 | ep_return 105.320 +/- 51.273
+2023-07-24 11:24:09,644 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0769   |
+|    entropy_loss         | 1.42     |
+|    policy_loss          | 0.0231   |
+|    value_loss           | 6.89     |
+| stat/                   |          |
+|    constraint_violation | 2.31e+03 |
+|    ep_constraint_vio... | 14.6     |
+|    ep_length            | 87.2     |
+|    ep_return            | 66.8     |
+|    ep_reward            | 0.493    |
+| stat_eval/              |          |
+|    constraint_violation | 8.8      |
+|    ep_length            | 124      |
+|    ep_return            | 105      |
+|    ep_reward            | 0.726    |
+|    mse                  | 109      |
+| time/                   |          |
+|    progress             | 0.7      |
+|    step                 | 4.2e+04  |
+|    step_time            | 0.628    |
+--------------------------------------
+
+2023-07-24 11:24:12,910 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:13,741 : Eval | ep_lengths 111.20 +/- 59.27 | ep_return 90.795 +/- 58.037
+2023-07-24 11:24:13,744 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.03     |
+|    entropy_loss         | 1.42     |
+|    policy_loss          | 0.021    |
+|    value_loss           | 3.13     |
+| stat/                   |          |
+|    constraint_violation | 2.64e+03 |
+|    ep_constraint_vio... | 10.6     |
+|    ep_length            | 97.7     |
+|    ep_return            | 78.3     |
+|    ep_reward            | 0.549    |
+| stat_eval/              |          |
+|    constraint_violation | 11.8     |
+|    ep_length            | 111      |
+|    ep_return            | 90.8     |
+|    ep_reward            | 0.633    |
+|    mse                  | 149      |
+| time/                   |          |
+|    progress             | 0.75     |
+|    step                 | 4.5e+04  |
+|    step_time            | 0.647    |
+--------------------------------------
+
+2023-07-24 11:24:16,997 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:17,822 : Eval | ep_lengths 111.70 +/- 58.52 | ep_return 90.965 +/- 57.776
+2023-07-24 11:24:17,825 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0288   |
+|    entropy_loss         | 1.42     |
+|    policy_loss          | 0.015    |
+|    value_loss           | 8.41     |
+| stat/                   |          |
+|    constraint_violation | 2.85e+03 |
+|    ep_constraint_vio... | 11.7     |
+|    ep_length            | 111      |
+|    ep_return            | 91.7     |
+|    ep_reward            | 0.639    |
+| stat_eval/              |          |
+|    constraint_violation | 14.7     |
+|    ep_length            | 112      |
+|    ep_return            | 91       |
+|    ep_reward            | 0.638    |
+|    mse                  | 153      |
+| time/                   |          |
+|    progress             | 0.8      |
+|    step                 | 4.8e+04  |
+|    step_time            | 0.641    |
+--------------------------------------
+
+2023-07-24 11:24:21,139 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:22,053 : Eval | ep_lengths 123.10 +/- 53.81 | ep_return 107.211 +/- 53.349
+2023-07-24 11:24:22,056 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.044    |
+|    entropy_loss         | 1.43     |
+|    policy_loss          | 0.0164   |
+|    value_loss           | 1.44     |
+| stat/                   |          |
+|    constraint_violation | 3.09e+03 |
+|    ep_constraint_vio... | 8        |
+|    ep_length            | 109      |
+|    ep_return            | 92.7     |
+|    ep_reward            | 0.632    |
+| stat_eval/              |          |
+|    constraint_violation | 4.9      |
+|    ep_length            | 123      |
+|    ep_return            | 107      |
+|    ep_reward            | 0.721    |
+|    mse                  | 119      |
+| time/                   |          |
+|    progress             | 0.85     |
+|    step                 | 5.1e+04  |
+|    step_time            | 0.652    |
+--------------------------------------
+
+2023-07-24 11:24:25,340 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:26,020 : Eval | ep_lengths 85.40 +/- 64.69 | ep_return 68.172 +/- 65.994
+2023-07-24 11:24:26,023 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0816   |
+|    entropy_loss         | 1.44     |
+|    policy_loss          | 0.0445   |
+|    value_loss           | 1.42     |
+| stat/                   |          |
+|    constraint_violation | 3.3e+03  |
+|    ep_constraint_vio... | 6.5      |
+|    ep_length            | 125      |
+|    ep_return            | 107      |
+|    ep_reward            | 0.731    |
+| stat_eval/              |          |
+|    constraint_violation | 11.8     |
+|    ep_length            | 85.4     |
+|    ep_return            | 68.2     |
+|    ep_reward            | 0.496    |
+|    mse                  | 212      |
+| time/                   |          |
+|    progress             | 0.9      |
+|    step                 | 5.4e+04  |
+|    step_time            | 0.663    |
+--------------------------------------
+
+2023-07-24 11:24:29,264 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:30,101 : Eval | ep_lengths 110.70 +/- 60.03 | ep_return 94.235 +/- 61.038
+2023-07-24 11:24:30,104 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0335   |
+|    entropy_loss         | 1.44     |
+|    policy_loss          | 0.0207   |
+|    value_loss           | 0.27     |
+| stat/                   |          |
+|    constraint_violation | 3.56e+03 |
+|    ep_constraint_vio... | 10.6     |
+|    ep_length            | 97.5     |
+|    ep_return            | 79.7     |
+|    ep_reward            | 0.576    |
+| stat_eval/              |          |
+|    constraint_violation | 7.4      |
+|    ep_length            | 111      |
+|    ep_return            | 94.2     |
+|    ep_reward            | 0.643    |
+|    mse                  | 183      |
+| time/                   |          |
+|    progress             | 0.95     |
+|    step                 | 5.7e+04  |
+|    step_time            | 0.629    |
+--------------------------------------
+
+2023-07-24 11:24:33,335 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:34,175 : Eval | ep_lengths 110.40 +/- 60.51 | ep_return 93.966 +/- 60.679
+2023-07-24 11:24:34,177 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0267   |
+|    entropy_loss         | 1.45     |
+|    policy_loss          | -0.00432 |
+|    value_loss           | 0.105    |
+| stat/                   |          |
+|    constraint_violation | 3.85e+03 |
+|    ep_constraint_vio... | 8.2      |
+|    ep_length            | 98       |
+|    ep_return            | 80.7     |
+|    ep_reward            | 0.578    |
+| stat_eval/              |          |
+|    constraint_violation | 8.5      |
+|    ep_length            | 110      |
+|    ep_return            | 94       |
+|    ep_reward            | 0.645    |
+|    mse                  | 137      |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+04    |
+|    step_time            | 0.638    |
+--------------------------------------
+
+Training done.
+2023-07-24 11:24:37,624 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:38,624 : Eval | ep_lengths 136.90 +/- 39.30 | ep_return 116.269 +/- 38.784
+2023-07-24 11:24:38,626 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0249   |
+|    entropy_loss         | 1.45     |
+|    policy_loss          | 0.0234   |
+|    value_loss           | 0.096    |
+| stat/                   |          |
+|    constraint_violation | 177      |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 137      |
+|    ep_return            | 118      |
+|    ep_reward            | 0.792    |
+| stat_eval/              |          |
+|    constraint_violation | 8.2      |
+|    ep_length            | 137      |
+|    ep_return            | 116      |
+|    ep_reward            | 0.778    |
+|    mse                  | 126      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.651    |
+--------------------------------------
+
+2023-07-24 11:24:41,880 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:42,981 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.150 +/- 2.524
+2023-07-24 11:24:42,983 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 15       |
+|    policy update step   | 3        |
+|    soft_lambda          | 16.6     |
+| loss/                   |          |
+|    approx_kl            | 0.0453   |
+|    entropy_loss         | 1.46     |
+|    policy_loss          | 0.00583  |
+|    value_loss           | 0.22     |
+| stat/                   |          |
+|    constraint_violation | 314      |
+|    ep_constraint_vio... | 4.9      |
+|    ep_length            | 137      |
+|    ep_return            | 118      |
+|    ep_reward            | 0.786    |
+| stat_eval/              |          |
+|    constraint_violation | 0.9      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.881    |
+|    mse                  | 63.5     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.636    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 131.260
+←[33maverage_rmse←[0m: 0.632
+←[33mrmse←[0m: 0.632
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.632
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[ 0  1  2  6  7  8  9 10]
+1
+2023-07-24 11:24:46,688 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:47,511 : Eval | ep_lengths 111.20 +/- 59.27 | ep_return 91.509 +/- 58.849
+2023-07-24 11:24:47,514 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 16       |
+|    policy update step   | 3        |
+|    soft_lambda          | 20.7     |
+| loss/                   |          |
+|    approx_kl            | 0.0127   |
+|    entropy_loss         | 1.46     |
+|    policy_loss          | 0.00235  |
+|    value_loss           | 0.367    |
+| stat/                   |          |
+|    constraint_violation | 101      |
+|    ep_constraint_vio... | 5.6      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.852    |
+| stat_eval/              |          |
+|    constraint_violation | 8.1      |
+|    ep_length            | 111      |
+|    ep_return            | 91.5     |
+|    ep_reward            | 0.633    |
+|    mse                  | 147      |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.72     |
+--------------------------------------
+
+2023-07-24 11:24:50,637 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:51,665 : Eval | ep_lengths 137.10 +/- 38.70 | ep_return 112.143 +/- 37.471
+2023-07-24 11:24:51,667 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 16       |
+|    policy update step   | 3        |
+|    soft_lambda          | 20.7     |
+| loss/                   |          |
+|    approx_kl            | 0.0328   |
+|    entropy_loss         | 1.46     |
+|    policy_loss          | 0.00801  |
+|    value_loss           | 1.13     |
+| stat/                   |          |
+|    constraint_violation | 268      |
+|    ep_constraint_vio... | 11.3     |
+|    ep_length            | 150      |
+|    ep_return            | 123      |
+|    ep_reward            | 0.818    |
+| stat_eval/              |          |
+|    constraint_violation | 8.1      |
+|    ep_length            | 137      |
+|    ep_return            | 112      |
+|    ep_reward            | 0.749    |
+|    mse                  | 117      |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.629    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 128.953
+←[33maverage_rmse←[0m: 0.593
+←[33mrmse←[0m: 0.593
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.593
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[ 0  1  2  6  7  8  9 10]
+1
+2023-07-24 11:24:55,090 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:24:56,169 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.735 +/- 4.192
+2023-07-24 11:24:56,173 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 17       |
+|    policy update step   | 3        |
+|    soft_lambda          | 24.9     |
+| loss/                   |          |
+|    approx_kl            | 0.0554   |
+|    entropy_loss         | 1.47     |
+|    policy_loss          | 0.0256   |
+|    value_loss           | 0.356    |
+| stat/                   |          |
+|    constraint_violation | 95       |
+|    ep_constraint_vio... | 6.1      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.845    |
+| stat_eval/              |          |
+|    constraint_violation | 4.3      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+|    mse                  | 68.4     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.624    |
+--------------------------------------
+
+2023-07-24 11:24:59,509 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:00,622 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.697 +/- 4.890
+2023-07-24 11:25:00,625 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 17       |
+|    policy update step   | 3        |
+|    soft_lambda          | 24.9     |
+| loss/                   |          |
+|    approx_kl            | 0.0256   |
+|    entropy_loss         | 1.47     |
+|    policy_loss          | -0.00312 |
+|    value_loss           | 0.538    |
+| stat/                   |          |
+|    constraint_violation | 214      |
+|    ep_constraint_vio... | 6.1      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.853    |
+| stat_eval/              |          |
+|    constraint_violation | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.865    |
+|    mse                  | 70.3     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.681    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 131.007
+←[33maverage_rmse←[0m: 0.634
+←[33mrmse←[0m: 0.634
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.634
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+True
+violation steps
+[ 0  1  2  7  8  9 10]
+1
+2023-07-24 11:25:04,165 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:05,258 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.942 +/- 5.609
+2023-07-24 11:25:05,261 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 18       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0294   |
+|    entropy_loss         | 1.47     |
+|    policy_loss          | -0.00727 |
+|    value_loss           | 0.231    |
+| stat/                   |          |
+|    constraint_violation | 189      |
+|    ep_constraint_vio... | 13.1     |
+|    ep_length            | 139      |
+|    ep_return            | 114      |
+|    ep_reward            | 0.769    |
+| stat_eval/              |          |
+|    constraint_violation | 7.8      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.866    |
+|    mse                  | 88.4     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.626    |
+--------------------------------------
+
+2023-07-24 11:25:08,561 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:09,646 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.004 +/- 4.869
+2023-07-24 11:25:09,649 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 18       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0244   |
+|    entropy_loss         | 1.46     |
+|    policy_loss          | 0.00495  |
+|    value_loss           | 0.0786   |
+| stat/                   |          |
+|    constraint_violation | 216      |
+|    ep_constraint_vio... | 1.7      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.879    |
+| stat_eval/              |          |
+|    constraint_violation | 7.9      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.867    |
+|    mse                  | 84.1     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.683    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 132.481
+←[33maverage_rmse←[0m: 0.660
+←[33mrmse←[0m: 0.660
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.660
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2]
+0
+2023-07-24 11:25:13,197 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:14,287 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.468 +/- 4.741
+2023-07-24 11:25:14,290 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 19       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.019    |
+|    entropy_loss         | 1.46     |
+|    policy_loss          | 0.00636  |
+|    value_loss           | 0.294    |
+| stat/                   |          |
+|    constraint_violation | 129      |
+|    ep_constraint_vio... | 7.2      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.851    |
+| stat_eval/              |          |
+|    constraint_violation | 4.6      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 69.8     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.637    |
+--------------------------------------
+
+2023-07-24 11:25:17,377 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:18,526 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.152 +/- 5.484
+2023-07-24 11:25:18,530 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 19       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0909   |
+|    entropy_loss         | 1.48     |
+|    policy_loss          | 0.0301   |
+|    value_loss           | 0.123    |
+| stat/                   |          |
+|    constraint_violation | 202      |
+|    ep_constraint_vio... | 2.1      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.855    |
+| stat_eval/              |          |
+|    constraint_violation | 5.1      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.854    |
+|    mse                  | 70.4     |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.611    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 130.030
+←[33maverage_rmse←[0m: 0.595
+←[33mrmse←[0m: 0.595
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.595
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2 6 7 8]
+0
+2023-07-24 11:25:21,984 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:23,073 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 127.266 +/- 4.639
+2023-07-24 11:25:23,076 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 20       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0517   |
+|    entropy_loss         | 1.49     |
+|    policy_loss          | 0.0161   |
+|    value_loss           | 0.154    |
+| stat/                   |          |
+|    constraint_violation | 121      |
+|    ep_constraint_vio... | 5.3      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.842    |
+| stat_eval/              |          |
+|    constraint_violation | 4.1      |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.848    |
+|    mse                  | 66.2     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.6      |
+--------------------------------------
+
+2023-07-24 11:25:26,305 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:27,399 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.836 +/- 4.886
+2023-07-24 11:25:27,402 :
+---------------------------------------
+| lambda/                 |           |
+|    hard_lambda          | 122       |
+|    lambda training step | 20        |
+|    policy update step   | 3         |
+|    soft_lambda          | 29        |
+| loss/                   |           |
+|    approx_kl            | 0.0237    |
+|    entropy_loss         | 1.5       |
+|    policy_loss          | -0.000736 |
+|    value_loss           | 0.0658    |
+| stat/                   |           |
+|    constraint_violation | 217       |
+|    ep_constraint_vio... | 7.1       |
+|    ep_length            | 150       |
+|    ep_return            | 126       |
+|    ep_reward            | 0.839     |
+| stat_eval/              |           |
+|    constraint_violation | 3.4       |
+|    ep_length            | 150       |
+|    ep_return            | 130       |
+|    ep_reward            | 0.866     |
+|    mse                  | 67.4      |
+| time/                   |           |
+|    progress             | 1         |
+|    step                 | 6e+03     |
+|    step_time            | 0.632     |
+---------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 130.374
+←[33maverage_rmse←[0m: 0.604
+←[33mrmse←[0m: 0.604
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.604
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1 2 6 7 8]
+0
+2023-07-24 11:25:31,041 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:32,147 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 127.938 +/- 5.234
+2023-07-24 11:25:32,150 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 21       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.031    |
+|    entropy_loss         | 1.51     |
+|    policy_loss          | 0.014    |
+|    value_loss           | 0.0215   |
+| stat/                   |          |
+|    constraint_violation | 99       |
+|    ep_constraint_vio... | 6.1      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.839    |
+| stat_eval/              |          |
+|    constraint_violation | 4.9      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.853    |
+|    mse                  | 72.6     |
+| time/                   |          |
+|    progress             | 0.5      |
+|    step                 | 3e+03    |
+|    step_time            | 0.637    |
+--------------------------------------
+
+2023-07-24 11:25:35,401 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:36,503 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.318 +/- 2.945
+2023-07-24 11:25:36,506 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 21       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0407   |
+|    entropy_loss         | 1.52     |
+|    policy_loss          | 0.0103   |
+|    value_loss           | 0.0549   |
+| stat/                   |          |
+|    constraint_violation | 214      |
+|    ep_constraint_vio... | 7.7      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.834    |
+| stat_eval/              |          |
+|    constraint_violation | 2.5      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.855    |
+|    mse                  | 62       |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 6e+03    |
+|    step_time            | 0.637    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 129.453
+←[33maverage_rmse←[0m: 0.600
+←[33mrmse←[0m: 0.600
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.600
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+violated
+False
+violation steps
+[0 1]
+0
+2023-07-24 11:25:40,065 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:41,198 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.233 +/- 4.311
+2023-07-24 11:25:41,201 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0201   |
+|    entropy_loss         | 1.52     |
+|    policy_loss          | -0.00809 |
+|    value_loss           | 0.0684   |
+| stat/                   |          |
+|    constraint_violation | 92       |
+|    ep_constraint_vio... | 3.5      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.839    |
+| stat_eval/              |          |
+|    constraint_violation | 2.6      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.842    |
+|    mse                  | 54.5     |
+| time/                   |          |
+|    progress             | 0.04     |
+|    step                 | 3e+03    |
+|    step_time            | 0.641    |
+--------------------------------------
+
+2023-07-24 11:25:44,520 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:45,635 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.175 +/- 3.272
+2023-07-24 11:25:45,638 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0482   |
+|    entropy_loss         | 1.53     |
+|    policy_loss          | 0.0262   |
+|    value_loss           | 0.0703   |
+| stat/                   |          |
+|    constraint_violation | 141      |
+|    ep_constraint_vio... | 2.8      |
+|    ep_length            | 150      |
+|    ep_return            | 126      |
+|    ep_reward            | 0.839    |
+| stat_eval/              |          |
+|    constraint_violation | 1.6      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.855    |
+|    mse                  | 61       |
+| time/                   |          |
+|    progress             | 0.08     |
+|    step                 | 6e+03    |
+|    step_time            | 0.629    |
+--------------------------------------
+
+2023-07-24 11:25:48,847 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:50,015 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.439 +/- 5.038
+2023-07-24 11:25:50,018 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0381   |
+|    entropy_loss         | 1.54     |
+|    policy_loss          | -0.00223 |
+|    value_loss           | 0.126    |
+| stat/                   |          |
+|    constraint_violation | 250      |
+|    ep_constraint_vio... | 7.7      |
+|    ep_length            | 150      |
+|    ep_return            | 125      |
+|    ep_reward            | 0.832    |
+| stat_eval/              |          |
+|    constraint_violation | 5.1      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.856    |
+|    mse                  | 71.7     |
+| time/                   |          |
+|    progress             | 0.12     |
+|    step                 | 9e+03    |
+|    step_time            | 0.625    |
+--------------------------------------
+
+2023-07-24 11:25:53,263 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:54,374 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.968 +/- 4.241
+2023-07-24 11:25:54,377 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0311   |
+|    entropy_loss         | 1.56     |
+|    policy_loss          | 0.0271   |
+|    value_loss           | 0.0916   |
+| stat/                   |          |
+|    constraint_violation | 337      |
+|    ep_constraint_vio... | 3.2      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+| stat_eval/              |          |
+|    constraint_violation | 3        |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.873    |
+|    mse                  | 76.5     |
+| time/                   |          |
+|    progress             | 0.16     |
+|    step                 | 1.2e+04  |
+|    step_time            | 0.651    |
+--------------------------------------
+
+2023-07-24 11:25:57,590 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:25:58,719 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.251 +/- 4.131
+2023-07-24 11:25:58,722 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0783   |
+|    entropy_loss         | 1.57     |
+|    policy_loss          | 0.0276   |
+|    value_loss           | 0.106    |
+| stat/                   |          |
+|    constraint_violation | 393      |
+|    ep_constraint_vio... | 3.3      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.865    |
+| stat_eval/              |          |
+|    constraint_violation | 3.8      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.868    |
+|    mse                  | 74       |
+| time/                   |          |
+|    progress             | 0.2      |
+|    step                 | 1.5e+04  |
+|    step_time            | 0.621    |
+--------------------------------------
+
+2023-07-24 11:26:01,975 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:03,081 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.391 +/- 2.993
+2023-07-24 11:26:03,084 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0246   |
+|    entropy_loss         | 1.59     |
+|    policy_loss          | 0.00673  |
+|    value_loss           | 0.063    |
+| stat/                   |          |
+|    constraint_violation | 502      |
+|    ep_constraint_vio... | 4.2      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.857    |
+| stat_eval/              |          |
+|    constraint_violation | 1.5      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.883    |
+|    mse                  | 62.7     |
+| time/                   |          |
+|    progress             | 0.24     |
+|    step                 | 1.8e+04  |
+|    step_time            | 0.644    |
+--------------------------------------
+
+2023-07-24 11:26:06,308 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:07,431 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.177 +/- 5.298
+2023-07-24 11:26:07,433 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0239   |
+|    entropy_loss         | 1.59     |
+|    policy_loss          | 0.00187  |
+|    value_loss           | 0.253    |
+| stat/                   |          |
+|    constraint_violation | 611      |
+|    ep_constraint_vio... | 5.8      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+| stat_eval/              |          |
+|    constraint_violation | 5.8      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.868    |
+|    mse                  | 79.9     |
+| time/                   |          |
+|    progress             | 0.28     |
+|    step                 | 2.1e+04  |
+|    step_time            | 0.671    |
+--------------------------------------
+
+2023-07-24 11:26:10,723 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:11,817 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.966 +/- 3.864
+2023-07-24 11:26:11,820 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0424   |
+|    entropy_loss         | 1.59     |
+|    policy_loss          | 0.00914  |
+|    value_loss           | 0.0788   |
+| stat/                   |          |
+|    constraint_violation | 695      |
+|    ep_constraint_vio... | 2.1      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.875    |
+| stat_eval/              |          |
+|    constraint_violation | 3.1      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.88     |
+|    mse                  | 72       |
+| time/                   |          |
+|    progress             | 0.32     |
+|    step                 | 2.4e+04  |
+|    step_time            | 0.679    |
+--------------------------------------
+
+2023-07-24 11:26:15,019 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:16,145 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.378 +/- 4.053
+2023-07-24 11:26:16,148 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0229   |
+|    entropy_loss         | 1.59     |
+|    policy_loss          | -0.00317 |
+|    value_loss           | 0.112    |
+| stat/                   |          |
+|    constraint_violation | 764      |
+|    ep_constraint_vio... | 0.3      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.876    |
+| stat_eval/              |          |
+|    constraint_violation | 4.2      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.869    |
+|    mse                  | 75.2     |
+| time/                   |          |
+|    progress             | 0.36     |
+|    step                 | 2.7e+04  |
+|    step_time            | 0.656    |
+--------------------------------------
+
+2023-07-24 11:26:19,303 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:20,404 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.688 +/- 3.998
+2023-07-24 11:26:20,408 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0111   |
+|    entropy_loss         | 1.6      |
+|    policy_loss          | -0.00491 |
+|    value_loss           | 0.0855   |
+| stat/                   |          |
+|    constraint_violation | 848      |
+|    ep_constraint_vio... | 3.1      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+| stat_eval/              |          |
+|    constraint_violation | 5.7      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.858    |
+|    mse                  | 79.2     |
+| time/                   |          |
+|    progress             | 0.4      |
+|    step                 | 3e+04    |
+|    step_time            | 0.663    |
+--------------------------------------
+
+2023-07-24 11:26:23,651 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:24,739 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.531 +/- 3.675
+2023-07-24 11:26:24,742 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0494   |
+|    entropy_loss         | 1.6      |
+|    policy_loss          | 0.0214   |
+|    value_loss           | 0.116    |
+| stat/                   |          |
+|    constraint_violation | 960      |
+|    ep_constraint_vio... | 5.2      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.859    |
+| stat_eval/              |          |
+|    constraint_violation | 14.5     |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.844    |
+|    mse                  | 102      |
+| time/                   |          |
+|    progress             | 0.44     |
+|    step                 | 3.3e+04  |
+|    step_time            | 0.644    |
+--------------------------------------
+
+2023-07-24 11:26:27,900 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:29,003 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 130.143 +/- 3.972
+2023-07-24 11:26:29,006 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0144   |
+|    entropy_loss         | 1.6      |
+|    policy_loss          | 0.00485  |
+|    value_loss           | 0.0442   |
+| stat/                   |          |
+|    constraint_violation | 1.09e+03 |
+|    ep_constraint_vio... | 4.1      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.873    |
+| stat_eval/              |          |
+|    constraint_violation | 6.3      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.868    |
+|    mse                  | 79.9     |
+| time/                   |          |
+|    progress             | 0.48     |
+|    step                 | 3.6e+04  |
+|    step_time            | 0.657    |
+--------------------------------------
+
+2023-07-24 11:26:32,226 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:33,319 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.621 +/- 2.581
+2023-07-24 11:26:33,322 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0249   |
+|    entropy_loss         | 1.6      |
+|    policy_loss          | 0.00501  |
+|    value_loss           | 2.18     |
+| stat/                   |          |
+|    constraint_violation | 1.2e+03  |
+|    ep_constraint_vio... | 7.1      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.871    |
+| stat_eval/              |          |
+|    constraint_violation | 3.8      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.877    |
+|    mse                  | 81.2     |
+| time/                   |          |
+|    progress             | 0.52     |
+|    step                 | 3.9e+04  |
+|    step_time            | 0.635    |
+--------------------------------------
+
+2023-07-24 11:26:36,540 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:37,631 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.449 +/- 3.628
+2023-07-24 11:26:37,634 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0382   |
+|    entropy_loss         | 1.61     |
+|    policy_loss          | 0.025    |
+|    value_loss           | 0.556    |
+| stat/                   |          |
+|    constraint_violation | 1.32e+03 |
+|    ep_constraint_vio... | 7.9      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.857    |
+| stat_eval/              |          |
+|    constraint_violation | 7.5      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 83.2     |
+| time/                   |          |
+|    progress             | 0.56     |
+|    step                 | 4.2e+04  |
+|    step_time            | 0.645    |
+--------------------------------------
+
+2023-07-24 11:26:40,801 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:41,915 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.469 +/- 4.457
+2023-07-24 11:26:41,918 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0233   |
+|    entropy_loss         | 1.62     |
+|    policy_loss          | 0.0118   |
+|    value_loss           | 0.102    |
+| stat/                   |          |
+|    constraint_violation | 1.48e+03 |
+|    ep_constraint_vio... | 8.4      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.855    |
+| stat_eval/              |          |
+|    constraint_violation | 7.2      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.876    |
+|    mse                  | 91.1     |
+| time/                   |          |
+|    progress             | 0.6      |
+|    step                 | 4.5e+04  |
+|    step_time            | 0.654    |
+--------------------------------------
+
+2023-07-24 11:26:49,654 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:52,076 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.533 +/- 3.247
+2023-07-24 11:26:52,079 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0142   |
+|    entropy_loss         | 1.63     |
+|    policy_loss          | -0.00727 |
+|    value_loss           | 1.08     |
+| stat/                   |          |
+|    constraint_violation | 1.67e+03 |
+|    ep_constraint_vio... | 7.5      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.876    |
+| stat_eval/              |          |
+|    constraint_violation | 9.1      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.864    |
+|    mse                  | 90.8     |
+| time/                   |          |
+|    progress             | 0.64     |
+|    step                 | 4.8e+04  |
+|    step_time            | 2.25     |
+--------------------------------------
+
+2023-07-24 11:26:55,627 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:26:56,747 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.513 +/- 4.623
+2023-07-24 11:26:56,750 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0264   |
+|    entropy_loss         | 1.64     |
+|    policy_loss          | 0.00195  |
+|    value_loss           | 0.219    |
+| stat/                   |          |
+|    constraint_violation | 1.76e+03 |
+|    ep_constraint_vio... | 3        |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.875    |
+| stat_eval/              |          |
+|    constraint_violation | 12.1     |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.857    |
+|    mse                  | 100      |
+| time/                   |          |
+|    progress             | 0.68     |
+|    step                 | 5.1e+04  |
+|    step_time            | 0.691    |
+--------------------------------------
+
+2023-07-24 11:27:00,292 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:01,454 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.963 +/- 3.709
+2023-07-24 11:27:01,457 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0388   |
+|    entropy_loss         | 1.66     |
+|    policy_loss          | 0.015    |
+|    value_loss           | 0.424    |
+| stat/                   |          |
+|    constraint_violation | 1.9e+03  |
+|    ep_constraint_vio... | 4.1      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.882    |
+| stat_eval/              |          |
+|    constraint_violation | 3.1      |
+|    ep_length            | 150      |
+|    ep_return            | 133      |
+|    ep_reward            | 0.886    |
+|    mse                  | 76       |
+| time/                   |          |
+|    progress             | 0.72     |
+|    step                 | 5.4e+04  |
+|    step_time            | 0.749    |
+--------------------------------------
+
+2023-07-24 11:27:04,792 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:05,877 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 133.763 +/- 2.524
+2023-07-24 11:27:05,881 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0365   |
+|    entropy_loss         | 1.66     |
+|    policy_loss          | 0.00789  |
+|    value_loss           | 0.0747   |
+| stat/                   |          |
+|    constraint_violation | 1.99e+03 |
+|    ep_constraint_vio... | 5.9      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.862    |
+| stat_eval/              |          |
+|    constraint_violation | 1.4      |
+|    ep_length            | 150      |
+|    ep_return            | 134      |
+|    ep_reward            | 0.892    |
+|    mse                  | 64.4     |
+| time/                   |          |
+|    progress             | 0.76     |
+|    step                 | 5.7e+04  |
+|    step_time            | 0.688    |
+--------------------------------------
+
+2023-07-24 11:27:09,207 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:10,293 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.025 +/- 4.060
+2023-07-24 11:27:10,296 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0211   |
+|    entropy_loss         | 1.67     |
+|    policy_loss          | 0.00407  |
+|    value_loss           | 0.0763   |
+| stat/                   |          |
+|    constraint_violation | 2.14e+03 |
+|    ep_constraint_vio... | 6.3      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.854    |
+| stat_eval/              |          |
+|    constraint_violation | 5        |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.86     |
+|    mse                  | 71.2     |
+| time/                   |          |
+|    progress             | 0.8      |
+|    step                 | 6e+04    |
+|    step_time            | 0.674    |
+--------------------------------------
+
+2023-07-24 11:27:13,558 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:14,673 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 132.599 +/- 3.235
+2023-07-24 11:27:14,676 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0325   |
+|    entropy_loss         | 1.67     |
+|    policy_loss          | 0.015    |
+|    value_loss           | 0.9      |
+| stat/                   |          |
+|    constraint_violation | 2.26e+03 |
+|    ep_constraint_vio... | 5.8      |
+|    ep_length            | 150      |
+|    ep_return            | 131      |
+|    ep_reward            | 0.872    |
+| stat_eval/              |          |
+|    constraint_violation | 3.2      |
+|    ep_length            | 150      |
+|    ep_return            | 133      |
+|    ep_reward            | 0.884    |
+|    mse                  | 77       |
+| time/                   |          |
+|    progress             | 0.84     |
+|    step                 | 6.3e+04  |
+|    step_time            | 0.714    |
+--------------------------------------
+
+2023-07-24 11:27:18,128 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:19,222 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 131.595 +/- 1.943
+2023-07-24 11:27:19,225 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0221   |
+|    entropy_loss         | 1.67     |
+|    policy_loss          | 0.00787  |
+|    value_loss           | 0.0892   |
+| stat/                   |          |
+|    constraint_violation | 2.35e+03 |
+|    ep_constraint_vio... | 2.8      |
+|    ep_length            | 150      |
+|    ep_return            | 130      |
+|    ep_reward            | 0.869    |
+| stat_eval/              |          |
+|    constraint_violation | 0.3      |
+|    ep_length            | 150      |
+|    ep_return            | 132      |
+|    ep_reward            | 0.877    |
+|    mse                  | 62.2     |
+| time/                   |          |
+|    progress             | 0.88     |
+|    step                 | 6.6e+04  |
+|    step_time            | 0.638    |
+--------------------------------------
+
+2023-07-24 11:27:22,495 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:23,620 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 129.429 +/- 3.996
+2023-07-24 11:27:23,623 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0348   |
+|    entropy_loss         | 1.66     |
+|    policy_loss          | 0.00674  |
+|    value_loss           | 0.674    |
+| stat/                   |          |
+|    constraint_violation | 2.56e+03 |
+|    ep_constraint_vio... | 10.4     |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.856    |
+| stat_eval/              |          |
+|    constraint_violation | 8.1      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.863    |
+|    mse                  | 87.2     |
+| time/                   |          |
+|    progress             | 0.92     |
+|    step                 | 6.9e+04  |
+|    step_time            | 0.647    |
+--------------------------------------
+
+2023-07-24 11:27:26,961 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:28,107 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 128.395 +/- 4.430
+2023-07-24 11:27:28,109 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0188   |
+|    entropy_loss         | 1.67     |
+|    policy_loss          | 0.0132   |
+|    value_loss           | 0.183    |
+| stat/                   |          |
+|    constraint_violation | 2.7e+03  |
+|    ep_constraint_vio... | 9.3      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.859    |
+| stat_eval/              |          |
+|    constraint_violation | 9.4      |
+|    ep_length            | 150      |
+|    ep_return            | 128      |
+|    ep_reward            | 0.856    |
+|    mse                  | 91.5     |
+| time/                   |          |
+|    progress             | 0.96     |
+|    step                 | 7.2e+04  |
+|    step_time            | 0.675    |
+--------------------------------------
+
+2023-07-24 11:27:31,333 : Checkpoint | temp/model_latest.pt
+2023-07-24 11:27:32,430 : Eval | ep_lengths 150.00 +/- 0.00 | ep_return 126.616 +/- 4.773
+2023-07-24 11:27:32,433 :
+--------------------------------------
+| lambda/                 |          |
+|    hard_lambda          | 122      |
+|    lambda training step | 22       |
+|    policy update step   | 3        |
+|    soft_lambda          | 29       |
+| loss/                   |          |
+|    approx_kl            | 0.0211   |
+|    entropy_loss         | 1.68     |
+|    policy_loss          | 0.0123   |
+|    value_loss           | 0.0772   |
+| stat/                   |          |
+|    constraint_violation | 2.8e+03  |
+|    ep_constraint_vio... | 6.5      |
+|    ep_length            | 150      |
+|    ep_return            | 129      |
+|    ep_reward            | 0.862    |
+| stat_eval/              |          |
+|    constraint_violation | 10.6     |
+|    ep_length            | 150      |
+|    ep_return            | 127      |
+|    ep_reward            | 0.844    |
+|    mse                  | 90       |
+| time/                   |          |
+|    progress             | 1        |
+|    step                 | 7.5e+04  |
+|    step_time            | 0.667    |
+--------------------------------------
+
+Training done.
+←[33maverage_length←[0m: 150.000
+←[33mlength←[0m: 150.000
+←[33maverage_return←[0m: 131.293
+←[33maverage_rmse←[0m: 0.645
+←[33mrmse←[0m: 0.645
+←[33mrmse_std←[0m: 0.000
+←[33mworst_case_rmse_at_0.5←[0m: 0.645
+←[33mfailure_rate←[0m: 0.000
+←[33maverage_constraint_violation←[0m: 0.000
+←[33mconstraint_violation_std←[0m: 0.000
+←[33mconstraint_violation←[0m: 0.000
+Evaluation done.
+lambdas
+[[  0.     0.  ]
+ [ 82.     4.15]
+ [122.     8.3 ]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    12.45]
+ [122.    16.6 ]
+ [122.    16.6 ]
+ [122.    16.6 ]
+ [122.    16.6 ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [122.    20.75]
+ [122.    24.9 ]
+ [122.    29.05]
+ [122.    29.05]
+ [122.    29.05]
+ [122.    29.05]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]
+ [  0.     0.  ]]
+number of hard violations
+[0.]
+hard violation steps
+[array([], dtype=int64)]
+number of soft violations
+[2.]
+soft violation steps
+[array([0, 1], dtype=int64)]
