@@ -1,0 +1,5 @@
+lamb_update_steps=6, 
+policy_update = 9,
+pre_training = 75k
+lamb_training = 9k
+last training = 90000
